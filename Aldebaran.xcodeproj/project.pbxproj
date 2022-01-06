@@ -1,0 +1,741 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B309D5AB2787674900D552C5 /* AldebaranApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B309D5AA2787674900D552C5 /* AldebaranApp.swift */; };
+		B309D5AD2787674900D552C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B309D5AC2787674900D552C5 /* ContentView.swift */; };
+		B309D5AF2787674B00D552C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B309D5AE2787674B00D552C5 /* Assets.xcassets */; };
+		B309D5B22787674B00D552C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B309D5B12787674B00D552C5 /* Preview Assets.xcassets */; };
+		B309D5BC2787674B00D552C5 /* AldebaranTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B309D5BB2787674B00D552C5 /* AldebaranTests.swift */; };
+		B309D5C62787674B00D552C5 /* AldebaranUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B309D5C52787674B00D552C5 /* AldebaranUITests.swift */; };
+		B309D5C82787674B00D552C5 /* AldebaranUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B309D5C72787674B00D552C5 /* AldebaranUITestsLaunchTests.swift */; };
+		B309D607278767A300D552C5 /* SpaceXService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B309D6032787679A00D552C5 /* SpaceXService.framework */; };
+		B309D608278767A300D552C5 /* SpaceXService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B309D6032787679A00D552C5 /* SpaceXService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B309D5B82787674B00D552C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B309D59F2787674900D552C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B309D5A62787674900D552C5;
+			remoteInfo = Aldebaran;
+		};
+		B309D5C22787674B00D552C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B309D59F2787674900D552C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B309D5A62787674900D552C5;
+			remoteInfo = Aldebaran;
+		};
+		B309D6022787679A00D552C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B309D5FD2787679900D552C5 /* SpaceXService.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B309D5E32787679900D552C5;
+			remoteInfo = SpaceXService;
+		};
+		B309D6042787679A00D552C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B309D5FD2787679900D552C5 /* SpaceXService.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B309D5ED2787679900D552C5;
+			remoteInfo = SpaceXServiceTests;
+		};
+		B309D657278767D500D552C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B309D652278767D500D552C5 /* Networking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B309D638278767D500D552C5;
+			remoteInfo = Networking;
+		};
+		B309D659278767D500D552C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B309D652278767D500D552C5 /* Networking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B309D642278767D500D552C5;
+			remoteInfo = NetworkingTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B309D609278767A300D552C5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B309D608278767A300D552C5 /* SpaceXService.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B309D5A72787674900D552C5 /* Aldebaran.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aldebaran.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B309D5AA2787674900D552C5 /* AldebaranApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AldebaranApp.swift; sourceTree = "<group>"; };
+		B309D5AC2787674900D552C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B309D5AE2787674B00D552C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B309D5B12787674B00D552C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B309D5B72787674B00D552C5 /* AldebaranTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AldebaranTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B309D5BB2787674B00D552C5 /* AldebaranTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AldebaranTests.swift; sourceTree = "<group>"; };
+		B309D5C12787674B00D552C5 /* AldebaranUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AldebaranUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B309D5C52787674B00D552C5 /* AldebaranUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AldebaranUITests.swift; sourceTree = "<group>"; };
+		B309D5C72787674B00D552C5 /* AldebaranUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AldebaranUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B309D5FD2787679900D552C5 /* SpaceXService.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SpaceXService.xcodeproj; path = SpaceXService/SpaceXService.xcodeproj; sourceTree = "<group>"; };
+		B309D652278767D500D552C5 /* Networking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Networking.xcodeproj; path = Networking/Networking.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B309D5A42787674900D552C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B309D607278767A300D552C5 /* SpaceXService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B309D5B42787674B00D552C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B309D5BE2787674B00D552C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B309D59E2787674900D552C5 = {
+			isa = PBXGroup;
+			children = (
+				B309D5A92787674900D552C5 /* Aldebaran */,
+				B309D5BA2787674B00D552C5 /* AldebaranTests */,
+				B309D5C42787674B00D552C5 /* AldebaranUITests */,
+				B309D5D42787675500D552C5 /* Modules */,
+				B309D5A82787674900D552C5 /* Products */,
+				B309D606278767A300D552C5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B309D5A82787674900D552C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B309D5A72787674900D552C5 /* Aldebaran.app */,
+				B309D5B72787674B00D552C5 /* AldebaranTests.xctest */,
+				B309D5C12787674B00D552C5 /* AldebaranUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B309D5A92787674900D552C5 /* Aldebaran */ = {
+			isa = PBXGroup;
+			children = (
+				B309D5AA2787674900D552C5 /* AldebaranApp.swift */,
+				B309D5AC2787674900D552C5 /* ContentView.swift */,
+				B309D5AE2787674B00D552C5 /* Assets.xcassets */,
+				B309D5B02787674B00D552C5 /* Preview Content */,
+			);
+			path = Aldebaran;
+			sourceTree = "<group>";
+		};
+		B309D5B02787674B00D552C5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B309D5B12787674B00D552C5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B309D5BA2787674B00D552C5 /* AldebaranTests */ = {
+			isa = PBXGroup;
+			children = (
+				B309D5BB2787674B00D552C5 /* AldebaranTests.swift */,
+			);
+			path = AldebaranTests;
+			sourceTree = "<group>";
+		};
+		B309D5C42787674B00D552C5 /* AldebaranUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B309D5C52787674B00D552C5 /* AldebaranUITests.swift */,
+				B309D5C72787674B00D552C5 /* AldebaranUITestsLaunchTests.swift */,
+			);
+			path = AldebaranUITests;
+			sourceTree = "<group>";
+		};
+		B309D5D42787675500D552C5 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B309D5D82787677900D552C5 /* Core */,
+				B309D5D72787677300D552C5 /* External */,
+				B309D5D52787676600D552C5 /* Presentation */,
+				B309D5D62787676E00D552C5 /* Service */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B309D5D52787676600D552C5 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B309D5D62787676E00D552C5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B309D5FD2787679900D552C5 /* SpaceXService.xcodeproj */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B309D5D72787677300D552C5 /* External */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		B309D5D82787677900D552C5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B309D652278767D500D552C5 /* Networking.xcodeproj */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B309D5FE2787679900D552C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B309D6032787679A00D552C5 /* SpaceXService.framework */,
+				B309D6052787679A00D552C5 /* SpaceXServiceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B309D606278767A300D552C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B309D653278767D500D552C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B309D658278767D500D552C5 /* Networking.framework */,
+				B309D65A278767D500D552C5 /* NetworkingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B309D5A62787674900D552C5 /* Aldebaran */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B309D5CB2787674B00D552C5 /* Build configuration list for PBXNativeTarget "Aldebaran" */;
+			buildPhases = (
+				B309D5A32787674900D552C5 /* Sources */,
+				B309D5A42787674900D552C5 /* Frameworks */,
+				B309D5A52787674900D552C5 /* Resources */,
+				B309D609278767A300D552C5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Aldebaran;
+			productName = Aldebaran;
+			productReference = B309D5A72787674900D552C5 /* Aldebaran.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B309D5B62787674B00D552C5 /* AldebaranTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B309D5CE2787674B00D552C5 /* Build configuration list for PBXNativeTarget "AldebaranTests" */;
+			buildPhases = (
+				B309D5B32787674B00D552C5 /* Sources */,
+				B309D5B42787674B00D552C5 /* Frameworks */,
+				B309D5B52787674B00D552C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B309D5B92787674B00D552C5 /* PBXTargetDependency */,
+			);
+			name = AldebaranTests;
+			productName = AldebaranTests;
+			productReference = B309D5B72787674B00D552C5 /* AldebaranTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B309D5C02787674B00D552C5 /* AldebaranUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B309D5D12787674B00D552C5 /* Build configuration list for PBXNativeTarget "AldebaranUITests" */;
+			buildPhases = (
+				B309D5BD2787674B00D552C5 /* Sources */,
+				B309D5BE2787674B00D552C5 /* Frameworks */,
+				B309D5BF2787674B00D552C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B309D5C32787674B00D552C5 /* PBXTargetDependency */,
+			);
+			name = AldebaranUITests;
+			productName = AldebaranUITests;
+			productReference = B309D5C12787674B00D552C5 /* AldebaranUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B309D59F2787674900D552C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					B309D5A62787674900D552C5 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					B309D5B62787674B00D552C5 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = B309D5A62787674900D552C5;
+					};
+					B309D5C02787674B00D552C5 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = B309D5A62787674900D552C5;
+					};
+				};
+			};
+			buildConfigurationList = B309D5A22787674900D552C5 /* Build configuration list for PBXProject "Aldebaran" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B309D59E2787674900D552C5;
+			productRefGroup = B309D5A82787674900D552C5 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B309D653278767D500D552C5 /* Products */;
+					ProjectRef = B309D652278767D500D552C5 /* Networking.xcodeproj */;
+				},
+				{
+					ProductGroup = B309D5FE2787679900D552C5 /* Products */;
+					ProjectRef = B309D5FD2787679900D552C5 /* SpaceXService.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				B309D5A62787674900D552C5 /* Aldebaran */,
+				B309D5B62787674B00D552C5 /* AldebaranTests */,
+				B309D5C02787674B00D552C5 /* AldebaranUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B309D6032787679A00D552C5 /* SpaceXService.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SpaceXService.framework;
+			remoteRef = B309D6022787679A00D552C5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B309D6052787679A00D552C5 /* SpaceXServiceTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SpaceXServiceTests.xctest;
+			remoteRef = B309D6042787679A00D552C5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B309D658278767D500D552C5 /* Networking.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Networking.framework;
+			remoteRef = B309D657278767D500D552C5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B309D65A278767D500D552C5 /* NetworkingTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NetworkingTests.xctest;
+			remoteRef = B309D659278767D500D552C5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B309D5A52787674900D552C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B309D5B22787674B00D552C5 /* Preview Assets.xcassets in Resources */,
+				B309D5AF2787674B00D552C5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B309D5B52787674B00D552C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B309D5BF2787674B00D552C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B309D5A32787674900D552C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B309D5AD2787674900D552C5 /* ContentView.swift in Sources */,
+				B309D5AB2787674900D552C5 /* AldebaranApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B309D5B32787674B00D552C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B309D5BC2787674B00D552C5 /* AldebaranTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B309D5BD2787674B00D552C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B309D5C62787674B00D552C5 /* AldebaranUITests.swift in Sources */,
+				B309D5C82787674B00D552C5 /* AldebaranUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B309D5B92787674B00D552C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B309D5A62787674900D552C5 /* Aldebaran */;
+			targetProxy = B309D5B82787674B00D552C5 /* PBXContainerItemProxy */;
+		};
+		B309D5C32787674B00D552C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B309D5A62787674900D552C5 /* Aldebaran */;
+			targetProxy = B309D5C22787674B00D552C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B309D5C92787674B00D552C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B309D5CA2787674B00D552C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B309D5CC2787674B00D552C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Aldebaran/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.saidozcan.Aldebaran;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B309D5CD2787674B00D552C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Aldebaran/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.saidozcan.Aldebaran;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B309D5CF2787674B00D552C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.saidozcan.AldebaranTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aldebaran.app/Aldebaran";
+			};
+			name = Debug;
+		};
+		B309D5D02787674B00D552C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.saidozcan.AldebaranTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aldebaran.app/Aldebaran";
+			};
+			name = Release;
+		};
+		B309D5D22787674B00D552C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.saidozcan.AldebaranUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Aldebaran;
+			};
+			name = Debug;
+		};
+		B309D5D32787674B00D552C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.saidozcan.AldebaranUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Aldebaran;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B309D5A22787674900D552C5 /* Build configuration list for PBXProject "Aldebaran" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B309D5C92787674B00D552C5 /* Debug */,
+				B309D5CA2787674B00D552C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B309D5CB2787674B00D552C5 /* Build configuration list for PBXNativeTarget "Aldebaran" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B309D5CC2787674B00D552C5 /* Debug */,
+				B309D5CD2787674B00D552C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B309D5CE2787674B00D552C5 /* Build configuration list for PBXNativeTarget "AldebaranTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B309D5CF2787674B00D552C5 /* Debug */,
+				B309D5D02787674B00D552C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B309D5D12787674B00D552C5 /* Build configuration list for PBXNativeTarget "AldebaranUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B309D5D22787674B00D552C5 /* Debug */,
+				B309D5D32787674B00D552C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B309D59F2787674900D552C5 /* Project object */;
+}
