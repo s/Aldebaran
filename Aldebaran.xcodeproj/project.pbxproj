@@ -61,6 +61,34 @@
 			remoteGlobalIDString = B309D642278767D500D552C5;
 			remoteInfo = NetworkingTests;
 		};
+		B34050FF2789D65A00DE53E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B34050FA2789D65900DE53E2 /* SpaceXDataModels.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B34050E02789D65900DE53E2;
+			remoteInfo = SpaceXDataModels;
+		};
+		B34051012789D65A00DE53E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B34050FA2789D65900DE53E2 /* SpaceXDataModels.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B34050EA2789D65900DE53E2;
+			remoteInfo = SpaceXDataModelsTests;
+		};
+		B34051492789DAA000DE53E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B34051442789DA9F00DE53E2 /* Utils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B340512A2789DA9F00DE53E2;
+			remoteInfo = Utils;
+		};
+		B340514B2789DAA000DE53E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B34051442789DA9F00DE53E2 /* Utils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B34051342789DA9F00DE53E2;
+			remoteInfo = UtilsTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -90,6 +118,8 @@
 		B309D5C72787674B00D552C5 /* AldebaranUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AldebaranUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B309D5FD2787679900D552C5 /* SpaceXService.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SpaceXService.xcodeproj; path = SpaceXService/SpaceXService.xcodeproj; sourceTree = "<group>"; };
 		B309D652278767D500D552C5 /* Networking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Networking.xcodeproj; path = Networking/Networking.xcodeproj; sourceTree = "<group>"; };
+		B34050FA2789D65900DE53E2 /* SpaceXDataModels.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SpaceXDataModels.xcodeproj; path = SpaceXDataModels/SpaceXDataModels.xcodeproj; sourceTree = "<group>"; };
+		B34051442789DA9F00DE53E2 /* Utils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Utils.xcodeproj; path = Utils/Utils.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +211,7 @@
 			children = (
 				B309D5D82787677900D552C5 /* Core */,
 				B309D5D72787677300D552C5 /* External */,
+				B34050D52789D62F00DE53E2 /* Model */,
 				B309D5D52787676600D552C5 /* Presentation */,
 				B309D5D62787676E00D552C5 /* Service */,
 			);
@@ -212,6 +243,7 @@
 		B309D5D82787677900D552C5 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				B34051442789DA9F00DE53E2 /* Utils.xcodeproj */,
 				B309D652278767D500D552C5 /* Networking.xcodeproj */,
 			);
 			path = Core;
@@ -238,6 +270,32 @@
 			children = (
 				B309D658278767D500D552C5 /* Networking.framework */,
 				B309D65A278767D500D552C5 /* NetworkingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B34050D52789D62F00DE53E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B34050FA2789D65900DE53E2 /* SpaceXDataModels.xcodeproj */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B34050FB2789D65900DE53E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B34051002789D65A00DE53E2 /* SpaceXDataModels.framework */,
+				B34051022789D65A00DE53E2 /* SpaceXDataModelsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B34051452789DA9F00DE53E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B340514A2789DAA000DE53E2 /* Utils.framework */,
+				B340514C2789DAA000DE53E2 /* UtilsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -339,8 +397,16 @@
 					ProjectRef = B309D652278767D500D552C5 /* Networking.xcodeproj */;
 				},
 				{
+					ProductGroup = B34050FB2789D65900DE53E2 /* Products */;
+					ProjectRef = B34050FA2789D65900DE53E2 /* SpaceXDataModels.xcodeproj */;
+				},
+				{
 					ProductGroup = B309D5FE2787679900D552C5 /* Products */;
 					ProjectRef = B309D5FD2787679900D552C5 /* SpaceXService.xcodeproj */;
+				},
+				{
+					ProductGroup = B34051452789DA9F00DE53E2 /* Products */;
+					ProjectRef = B34051442789DA9F00DE53E2 /* Utils.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -379,6 +445,34 @@
 			fileType = wrapper.cfbundle;
 			path = NetworkingTests.xctest;
 			remoteRef = B309D659278767D500D552C5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B34051002789D65A00DE53E2 /* SpaceXDataModels.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SpaceXDataModels.framework;
+			remoteRef = B34050FF2789D65A00DE53E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B34051022789D65A00DE53E2 /* SpaceXDataModelsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SpaceXDataModelsTests.xctest;
+			remoteRef = B34051012789D65A00DE53E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B340514A2789DAA000DE53E2 /* Utils.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Utils.framework;
+			remoteRef = B34051492789DAA000DE53E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B340514C2789DAA000DE53E2 /* UtilsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UtilsTests.xctest;
+			remoteRef = B340514B2789DAA000DE53E2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

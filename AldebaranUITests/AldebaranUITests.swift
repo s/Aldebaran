@@ -2,7 +2,7 @@
 //  AldebaranUITests.swift
 //  AldebaranUITests
 //
-//  Created by Muhammed Said Özcan on 06/01/2022.
+//  Created by Said Özcan on 06/01/2022.
 //
 
 import XCTest

@@ -11,6 +11,15 @@
 		B309D5EE2787679900D552C5 /* SpaceXService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B309D5E32787679900D552C5 /* SpaceXService.framework */; };
 		B309D5F32787679900D552C5 /* SpaceXServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B309D5F22787679900D552C5 /* SpaceXServiceTests.swift */; };
 		B309D5F42787679900D552C5 /* SpaceXService.h in Headers */ = {isa = PBXBuildFile; fileRef = B309D5E62787679900D552C5 /* SpaceXService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B340507D2789B36200DE53E2 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B340507C2789B36200DE53E2 /* Networking.framework */; };
+		B340507E2789B36200DE53E2 /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B340507C2789B36200DE53E2 /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B34050882789BD7C00DE53E2 /* Extension+Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34050802789BD7C00DE53E2 /* Extension+Launch.swift */; };
+		B340508C2789BD7C00DE53E2 /* SpaceXService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34050852789BD7C00DE53E2 /* SpaceXService.swift */; };
+		B340508F2789CA6200DE53E2 /* API+SpaceX.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340508E2789CA6200DE53E2 /* API+SpaceX.swift */; };
+		B340511C2789D70000DE53E2 /* SpaceXDataModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B340511B2789D70000DE53E2 /* SpaceXDataModels.framework */; };
+		B340511D2789D70000DE53E2 /* SpaceXDataModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B340511B2789D70000DE53E2 /* SpaceXDataModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B34051592789DAFD00DE53E2 /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B34051582789DAFD00DE53E2 /* Utils.framework */; };
+		B340515A2789DAFD00DE53E2 /* Utils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B34051582789DAFD00DE53E2 /* Utils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +32,35 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B340507F2789B36200DE53E2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B340507E2789B36200DE53E2 /* Networking.framework in Embed Frameworks */,
+				B340515A2789DAFD00DE53E2 /* Utils.framework in Embed Frameworks */,
+				B340511D2789D70000DE53E2 /* SpaceXDataModels.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		B309D5E32787679900D552C5 /* SpaceXService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpaceXService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B309D5E62787679900D552C5 /* SpaceXService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpaceXService.h; sourceTree = "<group>"; };
 		B309D5E72787679900D552C5 /* SpaceXService.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SpaceXService.docc; sourceTree = "<group>"; };
 		B309D5ED2787679900D552C5 /* SpaceXServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceXServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B309D5F22787679900D552C5 /* SpaceXServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXServiceTests.swift; sourceTree = "<group>"; };
+		B340507C2789B36200DE53E2 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B34050802789BD7C00DE53E2 /* Extension+Launch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Launch.swift"; sourceTree = "<group>"; };
+		B34050852789BD7C00DE53E2 /* SpaceXService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceXService.swift; sourceTree = "<group>"; };
+		B340508E2789CA6200DE53E2 /* API+SpaceX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+SpaceX.swift"; sourceTree = "<group>"; };
+		B34050D02789D5A000DE53E2 /* Extensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Extensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B340511B2789D70000DE53E2 /* SpaceXDataModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SpaceXDataModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B34051582789DAFD00DE53E2 /* Utils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +68,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B340507D2789B36200DE53E2 /* Networking.framework in Frameworks */,
+				B34051592789DAFD00DE53E2 /* Utils.framework in Frameworks */,
+				B340511C2789D70000DE53E2 /* SpaceXDataModels.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +91,7 @@
 				B309D5E52787679900D552C5 /* SpaceXService */,
 				B309D5F12787679900D552C5 /* SpaceXServiceTests */,
 				B309D5E42787679900D552C5 /* Products */,
+				B340507B2789B36200DE53E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,8 +107,13 @@
 		B309D5E52787679900D552C5 /* SpaceXService */ = {
 			isa = PBXGroup;
 			children = (
+				B3405170278A26BB00DE53E2 /* Utils */,
+				B340516F278A26AC00DE53E2 /* Requests */,
+				B34050802789BD7C00DE53E2 /* Extension+Launch.swift */,
+				B34050852789BD7C00DE53E2 /* SpaceXService.swift */,
 				B309D5E62787679900D552C5 /* SpaceXService.h */,
 				B309D5E72787679900D552C5 /* SpaceXService.docc */,
+				B340508E2789CA6200DE53E2 /* API+SpaceX.swift */,
 			);
 			path = SpaceXService;
 			sourceTree = "<group>";
@@ -83,6 +124,31 @@
 				B309D5F22787679900D552C5 /* SpaceXServiceTests.swift */,
 			);
 			path = SpaceXServiceTests;
+			sourceTree = "<group>";
+		};
+		B340507B2789B36200DE53E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B34051582789DAFD00DE53E2 /* Utils.framework */,
+				B340511B2789D70000DE53E2 /* SpaceXDataModels.framework */,
+				B34050D02789D5A000DE53E2 /* Extensions.framework */,
+				B340507C2789B36200DE53E2 /* Networking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B340516F278A26AC00DE53E2 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		B3405170278A26BB00DE53E2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,6 +173,7 @@
 				B309D5DF2787679900D552C5 /* Sources */,
 				B309D5E02787679900D552C5 /* Frameworks */,
 				B309D5E12787679900D552C5 /* Resources */,
+				B340507F2789B36200DE53E2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -194,7 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B340508C2789BD7C00DE53E2 /* SpaceXService.swift in Sources */,
+				B34050882789BD7C00DE53E2 /* Extension+Launch.swift in Sources */,
 				B309D5E82787679900D552C5 /* SpaceXService.docc in Sources */,
+				B340508F2789CA6200DE53E2 /* API+SpaceX.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +466,7 @@
 		B309D5FB2787679900D552C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -411,6 +482,7 @@
 		B309D5FC2787679900D552C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

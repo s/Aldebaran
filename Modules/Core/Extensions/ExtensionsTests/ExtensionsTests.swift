@@ -1,14 +1,14 @@
 //
-//  AldebaranTests.swift
-//  AldebaranTests
+//  ExtensionsTests.swift
+//  ExtensionsTests
 //
-//  Created by Said Özcan on 06/01/2022.
+//  Created by Said Özcan on 08/01/2022.
 //
 
 import XCTest
-@testable import Aldebaran
+@testable import Extensions
 
-class AldebaranTests: XCTestCase {
+class ExtensionsTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
