@@ -23,7 +23,7 @@ extension Endpoint {
     func makeRequest(with data: Kind.RequestData) -> URLRequest? {
         var components = URLComponents()
         components.scheme = api.baseURL.scheme
-        components.host = api.baseURL.host
+        components.host = api.baseURL.fullHost
         components.path = "/" + path
         components.queryItems = queryItems.isEmpty ? nil : queryItems
 

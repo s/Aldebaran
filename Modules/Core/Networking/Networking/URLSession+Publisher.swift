@@ -19,7 +19,8 @@ public extension URLSession {
                 error: NetworkError.invalidEndpoint(endpoint)
             ).eraseToAnyPublisher()
         }
-
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        
         return dataTaskPublisher(for: request)
             .map(\.data)
             .decode(type: NetworkResponse<R>.self, decoder: decoder)

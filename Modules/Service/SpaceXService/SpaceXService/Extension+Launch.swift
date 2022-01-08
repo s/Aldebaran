@@ -9,14 +9,8 @@ import Foundation
 import Networking
 import SpaceXDataModels
 
-extension Endpoint where Kind == EndpointKinds.Public, Response == [Launch] {
-    static var pastLaunches: Self {
-        Endpoint(api: API.spaceXAPI, path: "launches/past")
-    }
-}
-
-extension Endpoint where Kind == EndpointKinds.Public, Response == Launch {
-    static var nextLaunch: Self {
-        Endpoint(api: API.spaceXAPI, path: "launches/next")
+extension Endpoint where Kind == EndpointKinds.Public, Response == LaunchQueryResponse {
+    static var query: Self {
+        Endpoint(api: API.spaceXAPI, path: "launches/query")
     }
 }

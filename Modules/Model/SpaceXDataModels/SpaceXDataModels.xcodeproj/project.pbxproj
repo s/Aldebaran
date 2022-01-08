@@ -21,6 +21,11 @@
 		B3405174278A281000DE53E2 /* upcoming_launch.json in Resources */ = {isa = PBXBuildFile; fileRef = B3405173278A281000DE53E2 /* upcoming_launch.json */; };
 		B3405177278A2A3800DE53E2 /* previous_launch.json in Resources */ = {isa = PBXBuildFile; fileRef = B3405176278A2A3800DE53E2 /* previous_launch.json */; };
 		B3405179278A2B5000DE53E2 /* launches.json in Resources */ = {isa = PBXBuildFile; fileRef = B3405178278A2B5000DE53E2 /* launches.json */; };
+		B3405181278A2EB400DE53E2 /* Launchpad.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3405180278A2EB400DE53E2 /* Launchpad.swift */; };
+		B3405187278A329300DE53E2 /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3405186278A329300DE53E2 /* Rocket.swift */; };
+		B3405188278A3A6C00DE53E2 /* upcoming_launch.json in Resources */ = {isa = PBXBuildFile; fileRef = B3405173278A281000DE53E2 /* upcoming_launch.json */; };
+		B3405189278A3A6E00DE53E2 /* previous_launch.json in Resources */ = {isa = PBXBuildFile; fileRef = B3405176278A2A3800DE53E2 /* previous_launch.json */; };
+		B340518A278A3A7000DE53E2 /* launches.json in Resources */ = {isa = PBXBuildFile; fileRef = B3405178278A2B5000DE53E2 /* launches.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +67,8 @@
 		B3405173278A281000DE53E2 /* upcoming_launch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = upcoming_launch.json; sourceTree = "<group>"; };
 		B3405176278A2A3800DE53E2 /* previous_launch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = previous_launch.json; sourceTree = "<group>"; };
 		B3405178278A2B5000DE53E2 /* launches.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = launches.json; sourceTree = "<group>"; };
+		B3405180278A2EB400DE53E2 /* Launchpad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launchpad.swift; sourceTree = "<group>"; };
+		B3405186278A329300DE53E2 /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				B3405175278A287300DE53E2 /* Launch */,
-				B340517B278A2D7B00DE53E2 /* LaunchPad */,
+				B340517B278A2D7B00DE53E2 /* Launchpad */,
 				B340517A278A2D7000DE53E2 /* Rocket */,
 			);
 			path = Models;
@@ -165,15 +172,17 @@
 		B340517A278A2D7000DE53E2 /* Rocket */ = {
 			isa = PBXGroup;
 			children = (
+				B3405186278A329300DE53E2 /* Rocket.swift */,
 			);
 			path = Rocket;
 			sourceTree = "<group>";
 		};
-		B340517B278A2D7B00DE53E2 /* LaunchPad */ = {
+		B340517B278A2D7B00DE53E2 /* Launchpad */ = {
 			isa = PBXGroup;
 			children = (
+				B3405180278A2EB400DE53E2 /* Launchpad.swift */,
 			);
-			path = LaunchPad;
+			path = Launchpad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +288,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3405188278A3A6C00DE53E2 /* upcoming_launch.json in Resources */,
+				B3405189278A3A6E00DE53E2 /* previous_launch.json in Resources */,
+				B340518A278A3A7000DE53E2 /* launches.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,11 +302,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3405172278A26DA00DE53E2 /* LaunchQueryResponse.swift in Sources */,
+				B3405181278A2EB400DE53E2 /* Launchpad.swift in Sources */,
 				B34050E52789D65900DE53E2 /* SpaceXDataModels.docc in Sources */,
 				B34051182789D6F500DE53E2 /* Launch.swift in Sources */,
 				B340511A2789D6F500DE53E2 /* LaunchLinks.swift in Sources */,
 				B34051172789D6F500DE53E2 /* LaunchPatch.swift in Sources */,
 				B34051192789D6F500DE53E2 /* LaunchCore.swift in Sources */,
+				B3405187278A329300DE53E2 /* Rocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

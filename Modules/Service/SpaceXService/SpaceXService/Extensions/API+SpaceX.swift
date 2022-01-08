@@ -9,6 +9,6 @@ import Networking
 
 extension API {
     static var spaceXAPI: API {
-        API(baseURL: BaseURL(scheme: "https", host: "api.spacexdata.com"))
+        API(baseURL: BaseURL(scheme: "https", host: "api.spacexdata.com", version: "v5"))
     }
 }

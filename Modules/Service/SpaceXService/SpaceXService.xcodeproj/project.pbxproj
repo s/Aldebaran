@@ -107,13 +107,13 @@
 		B309D5E52787679900D552C5 /* SpaceXService */ = {
 			isa = PBXGroup;
 			children = (
+				B3405185278A311400DE53E2 /* Extensions */,
 				B3405170278A26BB00DE53E2 /* Utils */,
 				B340516F278A26AC00DE53E2 /* Requests */,
 				B34050802789BD7C00DE53E2 /* Extension+Launch.swift */,
 				B34050852789BD7C00DE53E2 /* SpaceXService.swift */,
 				B309D5E62787679900D552C5 /* SpaceXService.h */,
 				B309D5E72787679900D552C5 /* SpaceXService.docc */,
-				B340508E2789CA6200DE53E2 /* API+SpaceX.swift */,
 			);
 			path = SpaceXService;
 			sourceTree = "<group>";
@@ -149,6 +149,14 @@
 			children = (
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		B3405185278A311400DE53E2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B340508E2789CA6200DE53E2 /* API+SpaceX.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

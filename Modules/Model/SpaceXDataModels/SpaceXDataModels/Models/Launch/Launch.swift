@@ -16,14 +16,13 @@ public struct Launch: Identifiable {
     public let details: String?
     public let flightNumber: Double
 
-    public let launchpadID: String
-    public let rocketID: String
+    public let launchpad: Launchpad
+    public let rocket: Rocket
     public let payloadIDs: [String]
     public let crewIDs: [String]
     public let cores: [LaunchCore]?
 
-    public let dateUTC: Date?
-    public let staticFireDateUTC: Date?
+    public let dateUtc: Date?
 }
 
 // MARK: - CodingKeys
@@ -33,14 +32,13 @@ private extension Launch {
         case isUpcoming = "upcoming"
         case name
         case details
-        case flightNumber = "flight_number"
-        case launchpadID = "launchpad"
-        case rocketID = "rocket"
+        case flightNumber
+        case launchpad
+        case rocket
         case payloadIDs = "payloads"
         case crewIDs = "crew"
         case cores
-        case dateUTC = "date_utc"
-        case staticFireDateUTC = "static_fire_date_utc"
+        case dateUtc
     }
 }
 // MARK: - Decodable Conformance
@@ -53,12 +51,11 @@ extension Launch: Decodable {
         name = try container.decode(String.self, forKey: .name)
         details = try container.decodeIfPresent(String.self, forKey: .details)
         flightNumber = try container.decode(Double.self, forKey: .flightNumber)
-        launchpadID = try container.decode(String.self, forKey: .launchpadID)
-        rocketID = try container.decode(String.self, forKey: .rocketID)
+        launchpad = try container.decode(Launchpad.self, forKey: .launchpad)
+        rocket = try container.decode(Rocket.self, forKey: .rocket)
         payloadIDs = try container.decode([String].self, forKey: .payloadIDs)
         crewIDs = try container.decode([String].self, forKey: .crewIDs)
         cores = try container.decodeIfPresent([LaunchCore].self, forKey: .cores)
-        dateUTC = try container.decodeUTCDate(keyedBy: .dateUTC)
-        staticFireDateUTC = try container.decodeUTCDateIfPresent(keyedBy: .staticFireDateUTC)
+        dateUtc = try container.decodeUTCDate(keyedBy: .dateUtc)
     }
 }
