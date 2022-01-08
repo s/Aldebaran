@@ -20,6 +20,9 @@
 		B340511D2789D70000DE53E2 /* SpaceXDataModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B340511B2789D70000DE53E2 /* SpaceXDataModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B34051592789DAFD00DE53E2 /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B34051582789DAFD00DE53E2 /* Utils.framework */; };
 		B340515A2789DAFD00DE53E2 /* Utils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B34051582789DAFD00DE53E2 /* Utils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B340518E278A3EA600DE53E2 /* LaunchQueryRequestParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340518D278A3EA600DE53E2 /* LaunchQueryRequestParameters.swift */; };
+		B3405191278A428A00DE53E2 /* LaunchQueryRequestParameters+UseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3405190278A428A00DE53E2 /* LaunchQueryRequestParameters+UseCases.swift */; };
+		B3405197278A4A3D00DE53E2 /* LaunchQueryRequestParameters+UseCaseEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3405196278A4A3D00DE53E2 /* LaunchQueryRequestParameters+UseCaseEncoding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		B34050D02789D5A000DE53E2 /* Extensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Extensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B340511B2789D70000DE53E2 /* SpaceXDataModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SpaceXDataModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B34051582789DAFD00DE53E2 /* Utils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B340518D278A3EA600DE53E2 /* LaunchQueryRequestParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchQueryRequestParameters.swift; sourceTree = "<group>"; };
+		B3405190278A428A00DE53E2 /* LaunchQueryRequestParameters+UseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LaunchQueryRequestParameters+UseCases.swift"; sourceTree = "<group>"; };
+		B3405196278A4A3D00DE53E2 /* LaunchQueryRequestParameters+UseCaseEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LaunchQueryRequestParameters+UseCaseEncoding.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,9 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				B3405185278A311400DE53E2 /* Extensions */,
-				B3405170278A26BB00DE53E2 /* Utils */,
 				B340516F278A26AC00DE53E2 /* Requests */,
-				B34050802789BD7C00DE53E2 /* Extension+Launch.swift */,
 				B34050852789BD7C00DE53E2 /* SpaceXService.swift */,
 				B309D5E62787679900D552C5 /* SpaceXService.h */,
 				B309D5E72787679900D552C5 /* SpaceXService.docc */,
@@ -140,23 +144,28 @@
 		B340516F278A26AC00DE53E2 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				B3405195278A45E400DE53E2 /* LaunchQueryRequest */,
 			);
 			path = Requests;
-			sourceTree = "<group>";
-		};
-		B3405170278A26BB00DE53E2 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 		B3405185278A311400DE53E2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				B340508E2789CA6200DE53E2 /* API+SpaceX.swift */,
+				B34050802789BD7C00DE53E2 /* Extension+Launch.swift */,
+				B3405190278A428A00DE53E2 /* LaunchQueryRequestParameters+UseCases.swift */,
+				B3405196278A4A3D00DE53E2 /* LaunchQueryRequestParameters+UseCaseEncoding.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B3405195278A45E400DE53E2 /* LaunchQueryRequest */ = {
+			isa = PBXGroup;
+			children = (
+				B340518D278A3EA600DE53E2 /* LaunchQueryRequestParameters.swift */,
+			);
+			path = LaunchQueryRequest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +279,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B340508C2789BD7C00DE53E2 /* SpaceXService.swift in Sources */,
+				B3405191278A428A00DE53E2 /* LaunchQueryRequestParameters+UseCases.swift in Sources */,
 				B34050882789BD7C00DE53E2 /* Extension+Launch.swift in Sources */,
 				B309D5E82787679900D552C5 /* SpaceXService.docc in Sources */,
 				B340508F2789CA6200DE53E2 /* API+SpaceX.swift in Sources */,
+				B3405197278A4A3D00DE53E2 /* LaunchQueryRequestParameters+UseCaseEncoding.swift in Sources */,
+				B340518E278A3EA600DE53E2 /* LaunchQueryRequestParameters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

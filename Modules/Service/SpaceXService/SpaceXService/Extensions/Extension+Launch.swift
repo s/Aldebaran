@@ -9,7 +9,7 @@ import Foundation
 import Networking
 import SpaceXDataModels
 
-extension Endpoint where Kind == EndpointKinds.Public, Response == LaunchQueryResponse {
+extension Endpoint where Kind == EndpointKinds.POST, Response == LaunchQueryResponse {
     static var query: Self {
         Endpoint(api: API.spaceXAPI, path: "launches/query")
     }

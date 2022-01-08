@@ -23,8 +23,8 @@ public extension URLSession {
         
         return dataTaskPublisher(for: request)
             .map(\.data)
-            .decode(type: NetworkResponse<R>.self, decoder: decoder)
-            .map(\.result)
+            .decode(type: R.self, decoder: decoder)
+            .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }
 }

@@ -13,10 +13,6 @@ public struct BaseURL {
     public let host: String
     public let version: String
     
-    public var fullHost: String {
-        host + "/" + version
-    }
-    
     // MARK: -
     public init(scheme: String, host: String, version: String) {
         self.scheme = scheme

@@ -11,10 +11,12 @@ public struct Endpoint<Kind: EndpointKind, Response: Decodable> {
     var api: API
     var path: String
     var queryItems = [URLQueryItem]()
+    var method: HTTPMethod
     
-    public init(api: API, path: String, queryItems: [URLQueryItem] = []) {
+    public init(api: API, path: String, method: HTTPMethod = .get, queryItems: [URLQueryItem] = []) {
         self.api = api
         self.path = path
+        self.method = method
         self.queryItems = queryItems
     }
 }
@@ -23,8 +25,8 @@ extension Endpoint {
     func makeRequest(with data: Kind.RequestData) -> URLRequest? {
         var components = URLComponents()
         components.scheme = api.baseURL.scheme
-        components.host = api.baseURL.fullHost
-        components.path = "/" + path
+        components.host = api.baseURL.host
+        components.path = "/" + api.baseURL.version + "/" + path
         components.queryItems = queryItems.isEmpty ? nil : queryItems
 
         // If either the path or the query items passed contained
@@ -34,6 +36,7 @@ extension Endpoint {
         }
 
         var request = URLRequest(url: url)
+        request.httpMethod = method.rawValue
         Kind.prepare(&request, with: data)
         return request
     }

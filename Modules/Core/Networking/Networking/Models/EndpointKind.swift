@@ -15,19 +15,20 @@ public protocol EndpointKind {
 }
 
 public enum EndpointKinds {
-    public enum Public: EndpointKind {
+    public enum GET: EndpointKind {
         public static func prepare(_ request: inout URLRequest,
-                            with _: Void) {
+                                   with _: Void) {
             request.cachePolicy = .reloadIgnoringLocalCacheData
         }
     }
-
-    public enum Authenticated: EndpointKind {        
+    
+    public enum POST: EndpointKind {
+        public typealias RequestData = Data
         public static func prepare(_ request: inout URLRequest,
-                            with token: String) {
-            request.addValue("Bearer \(token)",
-                forHTTPHeaderField: "Authorization"
-            )
+                                   with data: RequestData) {
+            request.httpBody = data
+            request.httpMethod = HTTPMethod.post.rawValue
+            request.addValue("application/json", forHTTPHeaderField: "content-type")
         }
     }
 }

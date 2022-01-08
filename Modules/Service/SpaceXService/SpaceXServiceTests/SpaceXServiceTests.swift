@@ -6,9 +6,12 @@
 //
 
 import XCTest
+import Combine
 @testable import SpaceXService
 
 class SpaceXServiceTests: XCTestCase {
+    // MARK: -
+    private var disposeBag: [AnyCancellable] = []
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -20,13 +23,15 @@ class SpaceXServiceTests: XCTestCase {
 
     func testExample() throws {
         let service = SpaceXService()
-        
-        service.loadPastLaunches().sink { completion in
+        let expectation = XCTestExpectation()
+        _ = service.loadPreviousLaunch().sink(receiveCompletion: { completion in
             print(completion)
-        } receiveValue: { launches in
-            print(launches)
-        }
-
+            expectation.fulfill()
+        }, receiveValue: { response in
+            print(response)
+            expectation.fulfill()
+        }).store(in: &disposeBag)
+        wait(for: [expectation], timeout: 10.0)
     }
 
     func testPerformanceExample() throws {

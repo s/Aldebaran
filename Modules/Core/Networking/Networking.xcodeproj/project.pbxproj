@@ -17,7 +17,7 @@
 		B309D6632788527E00D552C5 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B309D6622788527E00D552C5 /* BaseURL.swift */; };
 		B309D6652788535700D552C5 /* URLSession+Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B309D6642788535700D552C5 /* URLSession+Publisher.swift */; };
 		B309D6672788539500D552C5 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B309D6662788539500D552C5 /* NetworkError.swift */; };
-		B309D6692788553300D552C5 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B309D6682788553300D552C5 /* NetworkResponse.swift */; };
+		B340518C278A3D7300DE53E2 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340518B278A3D7300DE53E2 /* HTTPMethod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,7 @@
 		B309D6622788527E00D552C5 /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
 		B309D6642788535700D552C5 /* URLSession+Publisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+Publisher.swift"; sourceTree = "<group>"; };
 		B309D6662788539500D552C5 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		B309D6682788553300D552C5 /* NetworkResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		B340518B278A3D7300DE53E2 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +108,8 @@
 				B309D6622788527E00D552C5 /* BaseURL.swift */,
 				B309D65D278851E200D552C5 /* Endpoint.swift */,
 				B309D65C278851E200D552C5 /* EndpointKind.swift */,
+				B340518B278A3D7300DE53E2 /* HTTPMethod.swift */,
 				B309D6662788539500D552C5 /* NetworkError.swift */,
-				B309D6682788553300D552C5 /* NetworkResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -224,10 +224,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B309D65E278851E200D552C5 /* EndpointKind.swift in Sources */,
-				B309D6692788553300D552C5 /* NetworkResponse.swift in Sources */,
 				B309D6672788539500D552C5 /* NetworkError.swift in Sources */,
 				B309D65F278851E200D552C5 /* Endpoint.swift in Sources */,
 				B309D6632788527E00D552C5 /* BaseURL.swift in Sources */,
+				B340518C278A3D7300DE53E2 /* HTTPMethod.swift in Sources */,
 				B309D6652788535700D552C5 /* URLSession+Publisher.swift in Sources */,
 				B309D6612788525300D552C5 /* API.swift in Sources */,
 				B309D63D278767D500D552C5 /* Networking.docc in Sources */,

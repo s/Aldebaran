@@ -5,8 +5,9 @@ import SpaceXDataModels
 
 // MARK: -
 public protocol SpaceXLoader {
-    func loadPastLaunches() -> AnyPublisher<[Launch], Error>
-    func loadUpcomingLaunch() -> AnyPublisher<Launch, Error>
+    func loadUpcomingLaunch() -> AnyPublisher<LaunchQueryResponse, Error>
+    func loadPreviousLaunch() -> AnyPublisher<LaunchQueryResponse, Error>
+    func loadLaunches() -> AnyPublisher<LaunchQueryResponse, Error>
 }
 
 // MARK: -
@@ -15,11 +16,30 @@ public struct SpaceXService: SpaceXLoader {
     private let urlSession = URLSession.shared
     
     // MARK: -
-    public func loadPastLaunches() -> AnyPublisher<[Launch], Error> {
-        urlSession.publisher(for: .pastLaunches, using: ())
+    public func loadUpcomingLaunch() -> AnyPublisher<LaunchQueryResponse, Error> {
+        do {
+            return try urlSession.publisher(for: .query, using: LaunchQueryRequestParameters.upcomingLaunch.encodeForRequest())
+        } catch {
+            print(error)
+            return Fail(error: error).eraseToAnyPublisher()
+        }
     }
     
-    public func loadUpcomingLaunch() -> AnyPublisher<Launch, Error> {
-        urlSession.publisher(for: .nextLaunch, using: ())
+    public func loadPreviousLaunch() -> AnyPublisher<LaunchQueryResponse, Error> {
+        do {
+            return try urlSession.publisher(for: .query, using: LaunchQueryRequestParameters.previousLaunch.encodeForRequest())
+        } catch {
+            print(error)
+            return Fail(error: error).eraseToAnyPublisher()
+        }
+    }
+    
+    public func loadLaunches() -> AnyPublisher<LaunchQueryResponse, Error> {
+        do {
+            return try urlSession.publisher(for: .query, using: LaunchQueryRequestParameters.launches.encodeForRequest())
+        } catch {
+            print(error)
+            return Fail(error: error).eraseToAnyPublisher()
+        }
     }
 }
