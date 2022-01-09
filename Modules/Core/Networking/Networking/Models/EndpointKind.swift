@@ -31,4 +31,20 @@ public enum EndpointKinds {
             request.addValue("application/json", forHTTPHeaderField: "content-type")
         }
     }
+    
+    enum Stub: EndpointKind {
+        static func prepare(_ request: inout URLRequest,
+                            with data: Void) {
+            // No-op
+        }
+    }
+    
+    enum Authenticated: EndpointKind {
+        static func prepare(_ request: inout URLRequest,
+                            with data: String) {
+            request.addValue("Bearer \(data)",
+                forHTTPHeaderField: "Authorization"
+            )
+        }
+    }
 }

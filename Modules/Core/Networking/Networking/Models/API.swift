@@ -17,5 +17,4 @@ public struct API {
         self.baseURL = baseURL
         self.headers = headers
     }
-
 }
