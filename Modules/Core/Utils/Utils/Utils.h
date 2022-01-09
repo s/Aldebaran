@@ -2,7 +2,7 @@
 //  Utils.h
 //  Utils
 //
-//  Created by Muhammed Said Özcan on 08/01/2022.
+//  Created by Said Özcan on 08/01/2022.
 //
 
 #import <Foundation/Foundation.h>

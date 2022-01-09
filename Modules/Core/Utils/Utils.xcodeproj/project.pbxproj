@@ -13,7 +13,6 @@
 		B34051502789DACF00DE53E2 /* DateFormatter+ISO8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340514D2789DACE00DE53E2 /* DateFormatter+ISO8601.swift */; };
 		B34051512789DACF00DE53E2 /* KeyedDecodingContainer+DecodeURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340514E2789DACF00DE53E2 /* KeyedDecodingContainer+DecodeURL.swift */; };
 		B34051522789DACF00DE53E2 /* KeyedDecodingContainer+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340514F2789DACF00DE53E2 /* KeyedDecodingContainer+Date.swift */; };
-		B34051692789E02F00DE53E2 /* JSONFileReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34051682789E02F00DE53E2 /* JSONFileReaderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +33,6 @@
 		B340514D2789DACE00DE53E2 /* DateFormatter+ISO8601.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+ISO8601.swift"; sourceTree = "<group>"; };
 		B340514E2789DACF00DE53E2 /* KeyedDecodingContainer+DecodeURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KeyedDecodingContainer+DecodeURL.swift"; sourceTree = "<group>"; };
 		B340514F2789DACF00DE53E2 /* KeyedDecodingContainer+Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KeyedDecodingContainer+Date.swift"; sourceTree = "<group>"; };
-		B34051682789E02F00DE53E2 /* JSONFileReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFileReaderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +85,6 @@
 		B34051382789DA9F00DE53E2 /* UtilsTests */ = {
 			isa = PBXGroup;
 			children = (
-				B34051682789E02F00DE53E2 /* JSONFileReaderTests.swift */,
 			);
 			path = UtilsTests;
 			sourceTree = "<group>";
@@ -222,7 +219,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B34051692789E02F00DE53E2 /* JSONFileReaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
