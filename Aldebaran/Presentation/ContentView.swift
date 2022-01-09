@@ -6,11 +6,16 @@
 //
 
 import SwiftUI
+import DashboardUI
 
 struct ContentView: View {
+    // MARK: -
+    @Environment(\.presentationProvider)
+    var presentationProvider
+
+    // MARK: -
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        presentationProvider.dashboardUIProvider.createUI()
     }
 }
 

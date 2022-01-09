@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct AldebaranApp: App {
+    // MARK: -
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(\.presentationProvider, PresentationProvider())
         }
     }
 }
