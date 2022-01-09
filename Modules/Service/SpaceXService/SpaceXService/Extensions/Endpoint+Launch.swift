@@ -1,5 +1,5 @@
 //
-//  Extension+Launch.swift
+//  Endpoint+Launch.swift
 //  
 //
 //  Created by Said Özcan on 06/01/2022.

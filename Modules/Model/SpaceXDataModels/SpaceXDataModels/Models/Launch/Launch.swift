@@ -14,7 +14,7 @@ public struct Launch: Identifiable {
     public let isUpcoming: Bool
     public let name: String
     public let details: String?
-    public let flightNumber: Double
+    public let flightNumber: Int
 
     public let launchpad: Launchpad
     public let rocket: Rocket
@@ -50,7 +50,7 @@ extension Launch: Decodable {
         isUpcoming = try container.decode(Bool.self, forKey: .isUpcoming)
         name = try container.decode(String.self, forKey: .name)
         details = try container.decodeIfPresent(String.self, forKey: .details)
-        flightNumber = try container.decode(Double.self, forKey: .flightNumber)
+        flightNumber = try container.decode(Int.self, forKey: .flightNumber)
         launchpad = try container.decode(Launchpad.self, forKey: .launchpad)
         rocket = try container.decode(Rocket.self, forKey: .rocket)
         payloadIDs = try container.decode([String].self, forKey: .payloadIDs)

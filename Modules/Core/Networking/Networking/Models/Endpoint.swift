@@ -22,7 +22,7 @@ public struct Endpoint<Kind: EndpointKind, Response: Decodable> {
 }
 
 extension Endpoint {
-    func makeRequest(with data: Kind.RequestData) -> URLRequest? {
+    public func makeRequest(with data: Kind.RequestData) -> URLRequest? {
         var components = URLComponents()
         components.scheme = api.baseURL.scheme
         components.host = api.baseURL.host

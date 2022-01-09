@@ -7,28 +7,32 @@
 
 import XCTest
 import Combine
+import SpaceXDataModels
 @testable import SpaceXService
 
 class SpaceXServiceTests: XCTestCase {
     // MARK: -
     private var disposeBag: [AnyCancellable] = []
+    private let loader = MockDataLoader()
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        let service = SpaceXService()
+    // MARK: -
+    func testUpcomingLaunches() throws {
+        let service = SpaceXServiceStub(loader: loader)
         let expectation = XCTestExpectation()
-        _ = service.loadPreviousLaunch().sink(receiveCompletion: { completion in
-            print(completion)
+        service.loadUpcomingLaunch().sink(receiveCompletion: { completion in
             expectation.fulfill()
         }, receiveValue: { response in
-            print(response)
+            XCTAssertTrue(!response.launches.isEmpty)
+            XCTAssertEqual(response.limit, 1)
+
+            let upcomingLaunch = response.launches[0]
+            XCTAssertNotNil(upcomingLaunch)
+            XCTAssertEqual(upcomingLaunch.name, "Transporter-3")
+            XCTAssertEqual(upcomingLaunch.rocket.id, "5e9d0d95eda69973a809d1ec")
+            XCTAssertEqual(upcomingLaunch.rocket.name, "Falcon 9")
+            XCTAssertEqual(upcomingLaunch.flightNumber, 145)
+            XCTAssertEqual(upcomingLaunch.dateUtc, Date(timeIntervalSince1970: 1642087500))
+            XCTAssertEqual(upcomingLaunch.id, "61bf3e31cd5ab50b0d936345")
             expectation.fulfill()
         }).store(in: &disposeBag)
         wait(for: [expectation], timeout: 10.0)
