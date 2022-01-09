@@ -16,6 +16,9 @@ public struct SpaceXService: SpaceXLoader {
     private let urlSession = URLSession.shared
     
     // MARK: -
+    public init() {}
+    
+    // MARK: -
     public func loadUpcomingLaunch() -> AnyPublisher<LaunchQueryResponse, Error> {
         do {
             return try urlSession.publisher(for: .query, using: LaunchQueryRequestParameters.upcomingLaunch.encodeForRequest())
