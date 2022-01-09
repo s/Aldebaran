@@ -2,7 +2,7 @@
 //  MockDataLoader.swift
 //  SpaceXDataModels
 //
-//  Created by Muhammed Said Özcan on 09/01/2022.
+//  Created by Said Özcan on 09/01/2022.
 //
 
 import Foundation
