@@ -39,18 +39,18 @@ extension LaunchLinks: Decodable {
         let container = try decoder.container(keyedBy: LaunchLinks.CodingKeys.self)
         
         patch = try container.decode(LaunchPatch.self, forKey: .patch)
-        pressKitURL = try container.decodeURL(keyedBy: .pressKitURL)
+        pressKitURL = try container.decodeURLIfPresent(keyedBy: .pressKitURL)
         
-        let youtubeID = try container.decode(String.self, forKey: .youtubeURL)
-        if !youtubeID.isEmpty {
+        let youtubeID = try container.decodeIfPresent(String.self, forKey: .youtubeURL)
+        if let youtubeID = youtubeID, !youtubeID.isEmpty {
             youtubeURL = URL(string: "https://www.youtube.com/watch?\(youtubeID)")
         } else {
             youtubeURL = nil
         }
-        articleURL = try container.decodeURL(keyedBy: .articleURL)
-        wikipediaURL = try container.decodeURL(keyedBy: .wikipediaURL)
+        articleURL = try container.decodeURLIfPresent(keyedBy: .articleURL)
+        wikipediaURL = try container.decodeURLIfPresent(keyedBy: .wikipediaURL)
         
         let redditContainer = try container.nestedContainer(keyedBy: LaunchLinks.CodingKeys.redditLinks.self, forKey: .reddit)
-        redditCampaignURL = try redditContainer.decodeURL(keyedBy: .redditCampaignURL)
+        redditCampaignURL = try redditContainer.decodeURLIfPresent(keyedBy: .redditCampaignURL)
     }
 }

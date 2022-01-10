@@ -27,6 +27,7 @@
 		B3405189278A3A6E00DE53E2 /* previous_launch.json in Resources */ = {isa = PBXBuildFile; fileRef = B3405176278A2A3800DE53E2 /* previous_launch.json */; };
 		B340518A278A3A7000DE53E2 /* launches.json in Resources */ = {isa = PBXBuildFile; fileRef = B3405178278A2B5000DE53E2 /* launches.json */; };
 		B3C2D526278B0A7700652A40 /* MockDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2D525278B0A7700652A40 /* MockDataLoader.swift */; };
+		B3C2D6D2278CEBA800652A40 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2D6D1278CEBA800652A40 /* Payload.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		B3405180278A2EB400DE53E2 /* Launchpad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launchpad.swift; sourceTree = "<group>"; };
 		B3405186278A329300DE53E2 /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
 		B3C2D525278B0A7700652A40 /* MockDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataLoader.swift; sourceTree = "<group>"; };
+		B3C2D6D1278CEBA800652A40 /* Payload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payload.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 		B34051102789D69800DE53E2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B3C2D6D0278CEBA100652A40 /* Payload */,
 				B3405175278A287300DE53E2 /* Launch */,
 				B340517B278A2D7B00DE53E2 /* Launchpad */,
 				B340517A278A2D7000DE53E2 /* Rocket */,
@@ -194,6 +197,14 @@
 				B3C2D525278B0A7700652A40 /* MockDataLoader.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B3C2D6D0278CEBA100652A40 /* Payload */ = {
+			isa = PBXGroup;
+			children = (
+				B3C2D6D1278CEBA800652A40 /* Payload.swift */,
+			);
+			path = Payload;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +331,7 @@
 				B3C2D526278B0A7700652A40 /* MockDataLoader.swift in Sources */,
 				B34051172789D6F500DE53E2 /* LaunchPatch.swift in Sources */,
 				B34051192789D6F500DE53E2 /* LaunchCore.swift in Sources */,
+				B3C2D6D2278CEBA800652A40 /* Payload.swift in Sources */,
 				B3405187278A329300DE53E2 /* Rocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,11 +18,12 @@ public struct Launch: Identifiable {
 
     public let launchpad: Launchpad
     public let rocket: Rocket
-    public let payloadIDs: [String]
+    public let payloads: [Payload]?
     public let crewIDs: [String]
     public let cores: [LaunchCore]?
 
     public let dateUtc: Date?
+    public let links: LaunchLinks?
 }
 
 // MARK: - CodingKeys
@@ -35,10 +36,11 @@ private extension Launch {
         case flightNumber
         case launchpad
         case rocket
-        case payloadIDs = "payloads"
+        case payloads
         case crewIDs = "crew"
         case cores
         case dateUtc
+        case links
     }
 }
 // MARK: - Decodable Conformance
@@ -53,9 +55,10 @@ extension Launch: Decodable {
         flightNumber = try container.decode(Int.self, forKey: .flightNumber)
         launchpad = try container.decode(Launchpad.self, forKey: .launchpad)
         rocket = try container.decode(Rocket.self, forKey: .rocket)
-        payloadIDs = try container.decode([String].self, forKey: .payloadIDs)
+        payloads = try container.decodeIfPresent([Payload].self, forKey: .payloads)
         crewIDs = try container.decode([String].self, forKey: .crewIDs)
         cores = try container.decodeIfPresent([LaunchCore].self, forKey: .cores)
         dateUtc = try container.decodeUTCDate(keyedBy: .dateUtc)
+        links = try container.decodeIfPresent(LaunchLinks.self, forKey: .links)
     }
 }

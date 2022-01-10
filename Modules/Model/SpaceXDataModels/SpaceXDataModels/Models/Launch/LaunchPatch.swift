@@ -26,8 +26,8 @@ private extension LaunchPatch {
 extension LaunchPatch: Decodable {
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: LaunchPatch.CodingKeys.self)
-        small = try container.decodeURL(keyedBy: .small)
-        large = try container.decodeURL(keyedBy: .large)
+        small = try container.decodeURLIfPresent(keyedBy: .small)
+        large = try container.decodeURLIfPresent(keyedBy: .large)
     }
 }
 
