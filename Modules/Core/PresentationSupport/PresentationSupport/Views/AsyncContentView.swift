@@ -25,7 +25,7 @@ public struct AsyncContentView<Source: LoadableObject, Content: View>: View {
         case .idle:
             Color.clear.onAppear(perform: source.load)
         case .loading:
-            ProgressView()
+            ProgressView().progressViewStyle(StyledProgressView())
         case .failed(let error):
             Text(error.localizedDescription)
             //ErrorView(error: error, retryHandler: source.load)
