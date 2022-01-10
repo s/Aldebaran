@@ -20,8 +20,11 @@ public struct DashboardUIView: View {
     
     // MARK: -
     public var body: some View {
-        AsyncContentView(source: viewModel) { launches in
-            dashboardView(with: launches)
+        GeometryReader { geometry in
+            AsyncContentView(source: viewModel) { launches in
+                dashboardView(with: launches)
+            }
+            .frame(width: geometry.size.width, height: geometry.size.height)
         }
     }
     
@@ -31,10 +34,12 @@ public struct DashboardUIView: View {
         if launches.hasNoData {
             EmptyContentView()
         } else {
-            VStack (alignment: .leading) {
+            VStack (alignment: .leading, spacing: Spacing.large.rawValue) {
                 launchView(with: launches.upcomingLaunch, isUpcoming: true)
                 launchView(with: launches.previousLaunch, isUpcoming: false)
+                Spacer()
             }
+            .padding()
         }
     }
     

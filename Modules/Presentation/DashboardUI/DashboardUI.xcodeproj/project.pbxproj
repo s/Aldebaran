@@ -23,6 +23,7 @@
 		B3C2D6A0278B886F00652A40 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = B3C2D69F278B886F00652A40 /* SnapshotTesting */; };
 		B3C2D6B5278B91F500652A40 /* LaunchContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2D6B4278B91F500652A40 /* LaunchContentView.swift */; };
 		B3C2D6B7278B928E00652A40 /* LaunchFootlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2D6B6278B928E00652A40 /* LaunchFootlineView.swift */; };
+		B3C2D6CF278CD47300652A40 /* LaunchpadMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2D6CE278CD47300652A40 /* LaunchpadMarker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		B3C2D685278B86B500652A40 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B3C2D6B4278B91F500652A40 /* LaunchContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchContentView.swift; sourceTree = "<group>"; };
 		B3C2D6B6278B928E00652A40 /* LaunchFootlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchFootlineView.swift; sourceTree = "<group>"; };
+		B3C2D6CE278CD47300652A40 /* LaunchpadMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchpadMarker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			children = (
 				B3C2D60B278B4E6B00652A40 /* DashboardUIViewModel.swift */,
 				B3C2D632278B5B6C00652A40 /* LaunchViewModel.swift */,
+				B3C2D6CE278CD47300652A40 /* LaunchpadMarker.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -176,9 +179,9 @@
 		B3C2D6B3278B91DF00652A40 /* Launch */ = {
 			isa = PBXGroup;
 			children = (
-				B3C2D634278B5B7600652A40 /* LaunchView.swift */,
 				B3C2D6B4278B91F500652A40 /* LaunchContentView.swift */,
 				B3C2D6B6278B928E00652A40 /* LaunchFootlineView.swift */,
+				B3C2D634278B5B7600652A40 /* LaunchView.swift */,
 			);
 			path = Launch;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 			files = (
 				B3C2D60A278B4E5C00652A40 /* DashboardUIView.swift in Sources */,
 				B3C2D6B5278B91F500652A40 /* LaunchContentView.swift in Sources */,
+				B3C2D6CF278CD47300652A40 /* LaunchpadMarker.swift in Sources */,
 				B3C2D635278B5B7600652A40 /* LaunchView.swift in Sources */,
 				B3C2D60C278B4E6B00652A40 /* DashboardUIViewModel.swift in Sources */,
 				B3C2D60E278B4E7600652A40 /* DashboardUIProviding.swift in Sources */,
