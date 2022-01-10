@@ -18,7 +18,7 @@ public enum EndpointKinds {
     public enum GET: EndpointKind {
         public static func prepare(_ request: inout URLRequest,
                                    with _: Void) {
-            request.cachePolicy = .reloadIgnoringLocalCacheData
+            request.cachePolicy = .returnCacheDataElseLoad
         }
     }
     
