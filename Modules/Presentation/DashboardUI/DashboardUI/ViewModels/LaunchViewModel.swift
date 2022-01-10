@@ -11,7 +11,7 @@ import SpaceXDataModels
 final class LaunchViewModel: ObservableObject {
     // MARK: -
     let title: String
-    private let launch: Launch
+    let launch: Launch
     
     // MARK: -
     init(title: String, launch: Launch) {

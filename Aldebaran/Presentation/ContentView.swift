@@ -7,15 +7,19 @@
 
 import SwiftUI
 import DashboardUI
+import PresentationSupport
 
 struct ContentView: View {
     // MARK: -
     @Environment(\.presentationProvider)
     var presentationProvider
-
+    
+    @State
+    var selectedTabIndex: Int = 0
+    
     // MARK: -
     var body: some View {
-        presentationProvider.dashboardUIProvider.createUI()
+        TabBar(items: presentationProvider.tabBarItems, selectedIndex: 0)
     }
 }
 

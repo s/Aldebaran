@@ -11,6 +11,6 @@ struct StyledProgressView: ProgressViewStyle {
     func makeBody(configuration: Configuration) -> some View {
         ProgressView(configuration)
             .progressViewStyle(CircularProgressViewStyle(tint: .white))
-            .scaleEffect(2)
+            .scaleEffect(1.5)
     }
 }

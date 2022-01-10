@@ -210,7 +210,6 @@
 		B309D5A92787674900D552C5 /* Aldebaran */ = {
 			isa = PBXGroup;
 			children = (
-				B309D5AA2787674900D552C5 /* AldebaranApp.swift */,
 				B3C2D663278B6A5C00652A40 /* Extensions */,
 				B3C2D5D1278B268A00652A40 /* Presentation */,
 				B3C2D65E278B697A00652A40 /* Providers */,
@@ -345,6 +344,7 @@
 		B3C2D5D1278B268A00652A40 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				B309D5AA2787674900D552C5 /* AldebaranApp.swift */,
 				B309D5AC2787674900D552C5 /* ContentView.swift */,
 			);
 			path = Presentation;

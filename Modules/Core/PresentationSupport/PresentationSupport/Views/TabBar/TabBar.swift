@@ -29,7 +29,7 @@ public struct TabBar: View {
                 VStack(spacing: .zero) {
                     ScrollView {
                         self.items[self.selectedIndex].content
-                            .frame(width: geometry.size.width)
+                            .frame(width: geometry.size.width, height: geometry.size.height)
                     }
                     Spacer()
                     ZStack {

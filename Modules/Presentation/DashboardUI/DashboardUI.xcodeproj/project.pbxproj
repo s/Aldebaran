@@ -21,6 +21,8 @@
 		B3C2D65B278B64AC00652A40 /* PresentationSupport.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3C2D659278B64AC00652A40 /* PresentationSupport.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B3C2D684278B840400652A40 /* LaunchViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2D683278B840400652A40 /* LaunchViewTests.swift */; };
 		B3C2D6A0278B886F00652A40 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = B3C2D69F278B886F00652A40 /* SnapshotTesting */; };
+		B3C2D6B5278B91F500652A40 /* LaunchContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2D6B4278B91F500652A40 /* LaunchContentView.swift */; };
+		B3C2D6B7278B928E00652A40 /* LaunchFootlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2D6B6278B928E00652A40 /* LaunchFootlineView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		B3C2D659278B64AC00652A40 /* PresentationSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PresentationSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C2D683278B840400652A40 /* LaunchViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewTests.swift; sourceTree = "<group>"; };
 		B3C2D685278B86B500652A40 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B3C2D6B4278B91F500652A40 /* LaunchContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchContentView.swift; sourceTree = "<group>"; };
+		B3C2D6B6278B928E00652A40 /* LaunchFootlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchFootlineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +132,8 @@
 		B3C2D616278B508B00652A40 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B3C2D6B3278B91DF00652A40 /* Launch */,
 				B3C2D609278B4E5C00652A40 /* DashboardUIView.swift */,
-				B3C2D634278B5B7600652A40 /* LaunchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,6 +171,16 @@
 			children = (
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		B3C2D6B3278B91DF00652A40 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				B3C2D634278B5B7600652A40 /* LaunchView.swift */,
+				B3C2D6B4278B91F500652A40 /* LaunchContentView.swift */,
+				B3C2D6B6278B928E00652A40 /* LaunchFootlineView.swift */,
+			);
+			path = Launch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,9 +303,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3C2D60A278B4E5C00652A40 /* DashboardUIView.swift in Sources */,
+				B3C2D6B5278B91F500652A40 /* LaunchContentView.swift in Sources */,
 				B3C2D635278B5B7600652A40 /* LaunchView.swift in Sources */,
 				B3C2D60C278B4E6B00652A40 /* DashboardUIViewModel.swift in Sources */,
 				B3C2D60E278B4E7600652A40 /* DashboardUIProviding.swift in Sources */,
+				B3C2D6B7278B928E00652A40 /* LaunchFootlineView.swift in Sources */,
 				B3C2D633278B5B6C00652A40 /* LaunchViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

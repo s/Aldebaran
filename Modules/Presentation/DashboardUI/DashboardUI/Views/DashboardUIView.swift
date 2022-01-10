@@ -31,9 +31,9 @@ public struct DashboardUIView: View {
         if launches.hasNoData {
             EmptyContentView()
         } else {
-            VStack {
-                launchView(with: launches.previousLaunch, isUpcoming: false)
+            VStack (alignment: .leading) {
                 launchView(with: launches.upcomingLaunch, isUpcoming: true)
+                launchView(with: launches.previousLaunch, isUpcoming: false)
             }
         }
     }
