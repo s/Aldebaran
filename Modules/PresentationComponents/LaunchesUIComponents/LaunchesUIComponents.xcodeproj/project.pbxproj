@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B336A5CF278E19A70083C7EB /* LaunchesUIComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B336A5CE278E19A70083C7EB /* LaunchesUIComponentsTests.swift */; };
+		B336A5D0278E19A70083C7EB /* LaunchesUIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EF6306278D9101001C4B6C /* LaunchesUIComponents.framework */; };
+		B336A5DB278E1AB50083C7EB /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = B336A5DA278E1AB50083C7EB /* SnapshotTesting */; };
+		B336A5DD278E1E930083C7EB /* PresentationSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B336A5DC278E1E930083C7EB /* PresentationSupport.framework */; };
 		B3EF630A278D9101001C4B6C /* LaunchesUIComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = B3EF6309278D9101001C4B6C /* LaunchesUIComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B3EF631B278D9139001C4B6C /* LaunchpadMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF6319278D9138001C4B6C /* LaunchpadMarker.swift */; };
 		B3EF631C278D9139001C4B6C /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF631A278D9139001C4B6C /* LaunchViewModel.swift */; };
@@ -14,7 +18,20 @@
 		B3EF6321278D916A001C4B6C /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = B3EF6320278D916A001C4B6C /* YouTubeiOSPlayerHelper */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B336A5D1278E19A70083C7EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3EF62FD278D9101001C4B6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3EF6305278D9101001C4B6C;
+			remoteInfo = LaunchesUIComponents;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		B336A5CC278E19A70083C7EB /* LaunchesUIComponentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaunchesUIComponentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B336A5CE278E19A70083C7EB /* LaunchesUIComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesUIComponentsTests.swift; sourceTree = "<group>"; };
+		B336A5DC278E1E930083C7EB /* PresentationSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PresentationSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3EF6306278D9101001C4B6C /* LaunchesUIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LaunchesUIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3EF6309278D9101001C4B6C /* LaunchesUIComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchesUIComponents.h; sourceTree = "<group>"; };
 		B3EF6319278D9138001C4B6C /* LaunchpadMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchpadMarker.swift; sourceTree = "<group>"; };
@@ -23,10 +40,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B336A5C9278E19A60083C7EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B336A5D0278E19A70083C7EB /* LaunchesUIComponents.framework in Frameworks */,
+				B336A5DB278E1AB50083C7EB /* SnapshotTesting in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B3EF6303278D9101001C4B6C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B336A5DD278E1E930083C7EB /* PresentationSupport.framework in Frameworks */,
 				B3EF6321278D916A001C4B6C /* YouTubeiOSPlayerHelper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -34,11 +61,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B336A5CD278E19A70083C7EB /* LaunchesUIComponentsTests */ = {
+			isa = PBXGroup;
+			children = (
+				B336A5CE278E19A70083C7EB /* LaunchesUIComponentsTests.swift */,
+			);
+			path = LaunchesUIComponentsTests;
+			sourceTree = "<group>";
+		};
+		B336A5D9278E1AB50083C7EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B336A5DC278E1E930083C7EB /* PresentationSupport.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B3EF62FC278D9101001C4B6C = {
 			isa = PBXGroup;
 			children = (
 				B3EF6308278D9101001C4B6C /* LaunchesUIComponents */,
+				B336A5CD278E19A70083C7EB /* LaunchesUIComponentsTests */,
 				B3EF6307278D9101001C4B6C /* Products */,
+				B336A5D9278E1AB50083C7EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				B3EF6306278D9101001C4B6C /* LaunchesUIComponents.framework */,
+				B336A5CC278E19A70083C7EB /* LaunchesUIComponentsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +145,27 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		B336A5CB278E19A60083C7EB /* LaunchesUIComponentsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B336A5D5278E19A70083C7EB /* Build configuration list for PBXNativeTarget "LaunchesUIComponentsTests" */;
+			buildPhases = (
+				B336A5C8278E19A60083C7EB /* Sources */,
+				B336A5C9278E19A60083C7EB /* Frameworks */,
+				B336A5CA278E19A60083C7EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B336A5D2278E19A70083C7EB /* PBXTargetDependency */,
+			);
+			name = LaunchesUIComponentsTests;
+			packageProductDependencies = (
+				B336A5DA278E1AB50083C7EB /* SnapshotTesting */,
+			);
+			productName = LaunchesUIComponentsTests;
+			productReference = B336A5CC278E19A70083C7EB /* LaunchesUIComponentsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B3EF6305278D9101001C4B6C /* LaunchesUIComponents */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3EF630D278D9101001C4B6C /* Build configuration list for PBXNativeTarget "LaunchesUIComponents" */;
@@ -127,8 +194,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					B336A5CB278E19A60083C7EB = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
 					B3EF6305278D9101001C4B6C = {
 						CreatedOnToolsVersion = 13.2.1;
 						LastSwiftMigration = 1320;
@@ -146,17 +217,26 @@
 			mainGroup = B3EF62FC278D9101001C4B6C;
 			packageReferences = (
 				B3EF631F278D916A001C4B6C /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */,
+				B336A5D6278E1A610083C7EB /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 			);
 			productRefGroup = B3EF6307278D9101001C4B6C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				B3EF6305278D9101001C4B6C /* LaunchesUIComponents */,
+				B336A5CB278E19A60083C7EB /* LaunchesUIComponentsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B336A5CA278E19A60083C7EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B3EF6304278D9101001C4B6C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -167,6 +247,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B336A5C8278E19A60083C7EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B336A5CF278E19A70083C7EB /* LaunchesUIComponentsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B3EF6302278D9101001C4B6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -179,7 +267,45 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B336A5D2278E19A70083C7EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3EF6305278D9101001C4B6C /* LaunchesUIComponents */;
+			targetProxy = B336A5D1278E19A70083C7EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		B336A5D3278E19A70083C7EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.saidozcan.LaunchesUIComponentsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B336A5D4278E19A70083C7EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.saidozcan.LaunchesUIComponentsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		B3EF630B278D9101001C4B6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -362,6 +488,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B336A5D5278E19A70083C7EB /* Build configuration list for PBXNativeTarget "LaunchesUIComponentsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B336A5D3278E19A70083C7EB /* Debug */,
+				B336A5D4278E19A70083C7EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B3EF6300278D9101001C4B6C /* Build configuration list for PBXProject "LaunchesUIComponents" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -383,6 +518,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		B336A5D6278E1A610083C7EB /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = exactVersion;
+				version = 1.9.0;
+			};
+		};
 		B3EF631F278D916A001C4B6C /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/youtube/youtube-ios-player-helper.git";
@@ -394,6 +537,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B336A5DA278E1AB50083C7EB /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B336A5D6278E1A610083C7EB /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
 		B3EF6320278D916A001C4B6C /* YouTubeiOSPlayerHelper */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B3EF631F278D916A001C4B6C /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
