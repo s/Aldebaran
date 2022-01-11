@@ -27,10 +27,15 @@ extension LaunchQueryRequestParameters {
     }
     
     static var launches: LaunchQueryRequestParameters {
+        launches(page: 1)
+    }
+    
+    static func launches(page: Int) -> LaunchQueryRequestParameters {
         LaunchQueryRequestParameters(
             options: .init(populate: ["rocket", "launchpad", "payloads"],
-                           sort: .init(key: "flight_number", sorting: .descending)),
-            query: .init(isUpcoming: true)
+                           sort: .init(key: "flight_number", sorting: .descending),
+                           page: page),
+            query: .init(isUpcoming: false)
         )
     }
 }

@@ -8,6 +8,7 @@ public protocol SpaceXLoader {
     func loadUpcomingLaunch() -> AnyPublisher<LaunchQueryResponse, Error>
     func loadPreviousLaunch() -> AnyPublisher<LaunchQueryResponse, Error>
     func loadLaunches() -> AnyPublisher<LaunchQueryResponse, Error>
+    func loadLaunches(page: Int) -> AnyPublisher<LaunchQueryResponse, Error>
 }
 
 // MARK: -
@@ -38,6 +39,10 @@ public struct SpaceXService: SpaceXLoader {
     }
     
     public func loadLaunches() -> AnyPublisher<LaunchQueryResponse, Error> {
+        loadLaunches(page: 1)
+    }
+    
+    public func loadLaunches(page: Int) -> AnyPublisher<LaunchQueryResponse, Error> {
         do {
             return try urlSession.publisher(for: .query, using: LaunchQueryRequestParameters.launches.encodeForRequest())
         } catch {

@@ -27,12 +27,14 @@ struct LaunchQueryRequestParameters: Encodable {
         let populate: [String]
         let sort: SortBy
         let limit: Int?
+        let page: Int
         
         // MARK: -
-        init(populate: [String], sort: SortBy, limit: Int? = nil) {
+        init(populate: [String], sort: SortBy, limit: Int? = nil, page: Int = 1) {
             self.populate = populate
             self.sort = sort
             self.limit = limit
+            self.page = page
         }
         
         // MARK: -
@@ -40,6 +42,7 @@ struct LaunchQueryRequestParameters: Encodable {
             case populate
             case sort
             case limit
+            case page
         }
         
         // MARK: -
@@ -55,6 +58,7 @@ struct LaunchQueryRequestParameters: Encodable {
             if let limit = limit {
                 try container.encode(limit, forKey: .limit)
             }
+            try container.encode(page, forKey: .page)
         }
     }
     

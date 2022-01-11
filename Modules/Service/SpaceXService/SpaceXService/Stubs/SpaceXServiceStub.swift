@@ -43,6 +43,13 @@ struct SpaceXServiceStub: SpaceXLoader {
             .eraseToAnyPublisher()
     }
     
+    func loadLaunches(page: Int) -> AnyPublisher<LaunchQueryResponse, Error> {
+        // TODO: implement next page stub
+        Just(loader.launchesData())
+            .setFailureType(to: Error.self)
+            .eraseToAnyPublisher()
+    }
+    
     // MARK: -
     private func buildSampleResponse() -> HTTPURLResponse? {
         do {
