@@ -26,7 +26,7 @@ public extension URLSession {
         return dataTaskPublisher(for: request)
             .breakpointOnError()
             .tryMap() { (data, response) -> Data in
-                debugPrint(response)
+                //debugPrint(response)
                 guard let httpResponse = response as? HTTPURLResponse,
                     httpResponse.statusCode == 200 else {
                         throw NetworkingError.httpError(URLError(.badServerResponse))

@@ -9,6 +9,7 @@ import SwiftUI
 import SpaceXDataModels
 import PresentationSupport
 import MapKit
+import AVKit
 
 struct LaunchView: View {
     // MARK: -
@@ -17,7 +18,9 @@ struct LaunchView: View {
     @State
     private var region: MKCoordinateRegion
 
-
+    @State
+    private var isShowingYoutubePlayer: Bool = false
+    
     // MARK: -
     init(viewModel: LaunchViewModel) {
         self.viewModel = viewModel
@@ -39,19 +42,31 @@ struct LaunchView: View {
     @ViewBuilder
     private var launchContentsView: some View {
         HStack(alignment: .top) {
-            VStack(spacing: Spacing.xsmall.rawValue) {
-                if viewModel.isUpcomingLaunch {
-                    launchpadMapView
-                }
+            VStack(spacing: Spacing.medium.rawValue) {
+                launchHeaderContentView
                 HStack(alignment: .top) {
                     launchMetaDataView
                     Spacer()
                     missionPatchView
                 }
             }
+            .padding()
         }
         .background(viewModel.isUpcomingLaunch ? Color.tertiaryBackgroundColor : Color.secondaryBackgroundColor)
         .cornerRadius(20)
+    }
+    
+    @ViewBuilder
+    private var launchHeaderContentView: some View {
+        if viewModel.isUpcomingLaunch {
+            launchpadMapView
+        } else {
+            if !isShowingYoutubePlayer {
+                youtubeThumbnailView
+            } else {
+                youtubePlayerView()
+            }
+        }
     }
     
     @ViewBuilder
@@ -64,12 +79,9 @@ struct LaunchView: View {
                     contentTextView(text: "•", style: .h6)
                     payloadOrbitView
                 }
-                descriptionView
-                Spacer()
             }
             Spacer()
         }
-        .padding()
     }
     
     @ViewBuilder
@@ -88,7 +100,6 @@ struct LaunchView: View {
                 .stroke(style: StrokeStyle(lineWidth: 2, dash: [15.0]))
                 .fill(Color.white)
         )
-        .padding()
     }
     
     @ViewBuilder
@@ -104,10 +115,10 @@ struct LaunchView: View {
     }
     
     @ViewBuilder
-    private func contentTextView(text: String, style: Typography.Style) -> some View {
+    private func contentTextView(text: String, style: Typography.Style, foregroundColor: Color = .white) -> some View {
         Text(text)
             .applyTypography(style)
-            .foregroundColor(.white)
+            .foregroundColor(foregroundColor)
     }
     
     @ViewBuilder
@@ -119,8 +130,58 @@ struct LaunchView: View {
     
     @ViewBuilder
     private var payloadOrbitView: some View {
-        if let orbit = viewModel.launch.payloads?.first?.orbit {
-            contentTextView(text: orbit, style: .h6)
+        if viewModel.hasPayloads {
+            HStack(alignment: .top) {
+                ForEach(viewModel.payloads, id: \.self) { payload in
+                    VStack {
+                        if let orbit = payload  .orbit {
+                            contentTextView(text: orbit, style: .h6, foregroundColor: Color.tertiaryBackgroundColor)
+                                .padding(.horizontal, 10)
+                                .padding(.vertical, 4)
+                        }
+                    }
+                    .background(Color.white)
+                    .cornerRadius(5)
+                }
+            }
+        }
+    }
+    
+    @ViewBuilder
+    private var youtubeThumbnailView: some View {
+        if let url = viewModel.youtubeVideoThumbnailURL {
+            AsyncImage(url: url) { image in
+                image
+                    .resizable()
+                    .scaledToFill()
+                    .frame(height: 156)
+            } placeholder: {
+                Color.clear
+            }
+            .cornerRadius(10)
+            .overlay(youtubeThumbnailViewOverlay)
+            .onTapGesture {
+                isShowingYoutubePlayer = true
+            }
+        }
+    }
+    
+    @ViewBuilder
+    private var youtubeThumbnailViewOverlay: some View {
+        Image(systemName: "play.circle.fill")
+            .font(.system(size: 60))
+            .foregroundColor(Color.primaryBackgroundColor)
+            .cornerRadius(30)
+    }
+    
+    @ViewBuilder
+    private func youtubePlayerView() -> some View {
+        if let youtubeVideoID = viewModel.youtubeVideoID {
+            YoutubeEmbedPlayerView(videoID: youtubeVideoID,
+                                   activityIndicatorViewTintColor: .white,
+                                   backgroundColor: Color.secondaryBackgroundColor)
+                .frame(height: 156)
+                .transition(.scale)
         }
     }
 }

@@ -23,6 +23,20 @@ final class LaunchViewModel: ObservableObject {
         }
         return false
     }
+    var hasPayloads: Bool {
+        guard let payloads = launch.payloads else { return false }
+        return !payloads.isEmpty
+    }
+    var payloads: [Payload] {
+        launch.payloads ?? []
+    }
+    var youtubeVideoID: String? {
+        launch.links?.webcastURL?.absoluteString.components(separatedBy: "/").last
+    }
+    var youtubeVideoThumbnailURL: URL? {
+        guard let youtubeVideoID = youtubeVideoID else { return nil }
+        return URL(string: "https://img.youtube.com/vi/\(youtubeVideoID)/0.jpg")
+    }
 
     // MARK: -
     init(title: String, launch: Launch) {

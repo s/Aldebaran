@@ -12,9 +12,10 @@ public struct LaunchLinks {
     public let patch: LaunchPatch
     public let redditCampaignURL: URL?
     public let pressKitURL: URL?
-    public let youtubeURL: URL?
+    public let youtube: String?
     public let articleURL: URL?
     public let wikipediaURL: URL?
+    public let webcastURL: URL?
 }
 
 // MARK: - Coding Keys
@@ -22,7 +23,7 @@ private extension LaunchLinks {
     enum CodingKeys: String, CodingKey {
         case patch
         case pressKitURL = "presskit"
-        case youtubeURL = "youtube_id"
+        case youtube = "youtube_id"
         case articleURL = "article"
         case wikipediaURL = "wikipedia"
         case reddit
@@ -30,6 +31,8 @@ private extension LaunchLinks {
         enum redditLinks: String, CodingKey {
             case redditCampaignURL = "campaign"
         }
+        
+        case webcastURL = "webcast"
     }
 }
 
@@ -41,12 +44,8 @@ extension LaunchLinks: Decodable {
         patch = try container.decode(LaunchPatch.self, forKey: .patch)
         pressKitURL = try container.decodeURLIfPresent(keyedBy: .pressKitURL)
         
-        let youtubeID = try container.decodeIfPresent(String.self, forKey: .youtubeURL)
-        if let youtubeID = youtubeID, !youtubeID.isEmpty {
-            youtubeURL = URL(string: "https://www.youtube.com/watch?\(youtubeID)")
-        } else {
-            youtubeURL = nil
-        }
+        youtube = try container.decodeIfPresent(String.self, forKey: .youtube)
+        webcastURL = try container.decodeURLIfPresent(keyedBy: .webcastURL)
         articleURL = try container.decodeURLIfPresent(keyedBy: .articleURL)
         wikipediaURL = try container.decodeURLIfPresent(keyedBy: .wikipediaURL)
         

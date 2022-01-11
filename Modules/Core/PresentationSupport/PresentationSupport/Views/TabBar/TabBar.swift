@@ -28,6 +28,7 @@ public struct TabBar: View {
             ZStack {
                 VStack(spacing: .zero) {
                     ScrollView {
+                        Color.clear.padding(.bottom, 44)
                         self.items[self.selectedIndex].content
                             .frame(width: geometry.size.width, height: geometry.size.height - Self.tabBarHeight)
                     }
@@ -63,9 +64,6 @@ public struct TabBar: View {
                 items[index].text.applyTypography(.c2)
             }
         }
-//        .anchorPreference(key: AnchorKey.self,
-//                          value: .bounds,
-//                          transform: { self.selectedIndex == index ? $0 : nil })
         .accentColor(index == selectedIndex ? Color.selectedFillColor : Color.unselectedFillColor)
         .padding(30)
     }
