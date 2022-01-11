@@ -31,14 +31,21 @@ public struct LaunchView: View {
     // MARK: -
     public var body: some View {
         VStack(alignment: .leading, spacing: Spacing.small.rawValue) {
-            Text(viewModel.title)
-                .applyTypography(.h3)
-                .foregroundColor(.white)
+            launchTitleView
             launchContentsView
         }
     }
     
     // MARK: -
+    @ViewBuilder
+    private var launchTitleView: some View {
+        if let title = viewModel.title {
+            Text(title)
+                .applyTypography(.h3)
+                .foregroundColor(.white)
+        }
+    }
+    
     @ViewBuilder
     private var launchContentsView: some View {
         HStack(alignment: .top) {

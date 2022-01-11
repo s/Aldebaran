@@ -12,7 +12,7 @@ import MapKit
 
 public final class LaunchViewModel: ObservableObject {
     // MARK: -
-    let title: String
+    let title: String?
     let launch: Launch
     let launchpadRegionCenter: CLLocationCoordinate2D
     let launchpadRegionSpan: MKCoordinateSpan
@@ -39,7 +39,7 @@ public final class LaunchViewModel: ObservableObject {
     }
 
     // MARK: -
-    public init(title: String, launch: Launch) {
+    public init(title: String? = nil, launch: Launch) {
         self.title = title
         self.launch = launch
         self.launchpadRegionCenter = CLLocationCoordinate2D(latitude: launch.launchpad.latitude,

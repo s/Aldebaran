@@ -35,12 +35,14 @@ public struct DashboardUIView: View {
         if launches.hasNoData {
             EmptyContentView()
         } else {
-            VStack (alignment: .leading, spacing: Spacing.large.rawValue) {
-                launchView(with: launches.upcomingLaunch, isUpcoming: true)
-                launchView(with: launches.previousLaunch, isUpcoming: false)
-                Spacer()
+            ScrollView {
+                VStack (alignment: .leading, spacing: Spacing.large.rawValue) {
+                    launchView(with: launches.upcomingLaunch, isUpcoming: true)
+                    launchView(with: launches.previousLaunch, isUpcoming: false)
+                    Spacer()
+                }
+                .padding()
             }
-            .padding()
         }
     }
     

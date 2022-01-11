@@ -23,7 +23,7 @@ public struct DashboardUIViewModelOutput {
 public final class DashboardUIViewModel: ObservableObject, LoadableObject {
     // MARK: -
     public typealias Output = DashboardUIViewModelOutput
-    private let service: SpaceXService
+    private let service: SpaceXLoader
     private var cancellable: AnyCancellable?
     
     @Published

@@ -14,11 +14,14 @@
 		B309D5BC2787674B00D552C5 /* AldebaranTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B309D5BB2787674B00D552C5 /* AldebaranTests.swift */; };
 		B309D5C62787674B00D552C5 /* AldebaranUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B309D5C52787674B00D552C5 /* AldebaranUITests.swift */; };
 		B309D5C82787674B00D552C5 /* AldebaranUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B309D5C72787674B00D552C5 /* AldebaranUITestsLaunchTests.swift */; };
+		B336A5AA278D9C5D0083C7EB /* LaunchesUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EF633D278D921B001C4B6C /* LaunchesUI.framework */; };
+		B336A5AB278D9C5D0083C7EB /* LaunchesUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3EF633D278D921B001C4B6C /* LaunchesUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B3C2D614278B4EFD00652A40 /* DashboardUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C2D606278B4E3D00652A40 /* DashboardUI.framework */; };
 		B3C2D615278B4EFD00652A40 /* DashboardUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3C2D606278B4E3D00652A40 /* DashboardUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B3C2D660278B698A00652A40 /* DashboardUIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2D65F278B698A00652A40 /* DashboardUIProvider.swift */; };
 		B3C2D662278B699500652A40 /* PresentationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2D661278B699500652A40 /* PresentationProvider.swift */; };
 		B3C2D665278B6AC400652A40 /* EnvironmentVariables+PresentationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2D664278B6AC400652A40 /* EnvironmentVariables+PresentationProvider.swift */; };
+		B3EF634D278D978B001C4B6C /* LaunchesUIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF634C278D978B001C4B6C /* LaunchesUIProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +130,13 @@
 			remoteGlobalIDString = B3EF6306278D9101001C4B6C;
 			remoteInfo = LaunchesUIComponents;
 		};
+		B3EF633C278D921B001C4B6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3EF6338278D921B001C4B6C /* LaunchesUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B3EF632E278D921B001C4B6C;
+			remoteInfo = LaunchesUI;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -137,6 +147,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				B3C2D615278B4EFD00652A40 /* DashboardUI.framework in Embed Frameworks */,
+				B336A5AB278D9C5D0083C7EB /* LaunchesUI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,6 +176,8 @@
 		B3C2D664278B6AC400652A40 /* EnvironmentVariables+PresentationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentVariables+PresentationProvider.swift"; sourceTree = "<group>"; };
 		B3C2D67A278B6FE700652A40 /* Localization.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Localization.xcodeproj; path = Localization/Localization.xcodeproj; sourceTree = "<group>"; };
 		B3EF6310278D9101001C4B6C /* LaunchesUIComponents.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LaunchesUIComponents.xcodeproj; path = LaunchesUIComponents/LaunchesUIComponents.xcodeproj; sourceTree = "<group>"; };
+		B3EF6338278D921B001C4B6C /* LaunchesUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LaunchesUI.xcodeproj; path = LaunchesUI/LaunchesUI.xcodeproj; sourceTree = "<group>"; };
+		B3EF634C278D978B001C4B6C /* LaunchesUIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesUIProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3C2D614278B4EFD00652A40 /* DashboardUI.framework in Frameworks */,
+				B336A5AA278D9C5D0083C7EB /* LaunchesUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +280,7 @@
 		B309D5D52787676600D552C5 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				B3EF6338278D921B001C4B6C /* LaunchesUI.xcodeproj */,
 				B3C2D601278B4E3D00652A40 /* DashboardUI.xcodeproj */,
 			);
 			path = Presentation;
@@ -380,6 +395,7 @@
 			isa = PBXGroup;
 			children = (
 				B3C2D65F278B698A00652A40 /* DashboardUIProvider.swift */,
+				B3EF634C278D978B001C4B6C /* LaunchesUIProvider.swift */,
 				B3C2D661278B699500652A40 /* PresentationProvider.swift */,
 			);
 			path = Providers;
@@ -413,6 +429,14 @@
 			isa = PBXGroup;
 			children = (
 				B3EF6315278D9102001C4B6C /* LaunchesUIComponents.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3EF6339278D921B001C4B6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3EF633D278D921B001C4B6C /* LaunchesUI.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -517,6 +541,10 @@
 				{
 					ProductGroup = B3C2D602278B4E3D00652A40 /* Products */;
 					ProjectRef = B3C2D601278B4E3D00652A40 /* DashboardUI.xcodeproj */;
+				},
+				{
+					ProductGroup = B3EF6339278D921B001C4B6C /* Products */;
+					ProjectRef = B3EF6338278D921B001C4B6C /* LaunchesUI.xcodeproj */;
 				},
 				{
 					ProductGroup = B3EF6311278D9101001C4B6C /* Products */;
@@ -648,6 +676,13 @@
 			remoteRef = B3EF6314278D9102001C4B6C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		B3EF633D278D921B001C4B6C /* LaunchesUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LaunchesUI.framework;
+			remoteRef = B3EF633C278D921B001C4B6C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -684,6 +719,7 @@
 				B3C2D662278B699500652A40 /* PresentationProvider.swift in Sources */,
 				B3C2D660278B698A00652A40 /* DashboardUIProvider.swift in Sources */,
 				B309D5AD2787674900D552C5 /* ContentView.swift in Sources */,
+				B3EF634D278D978B001C4B6C /* LaunchesUIProvider.swift in Sources */,
 				B309D5AB2787674900D552C5 /* AldebaranApp.swift in Sources */,
 				B3C2D665278B6AC400652A40 /* EnvironmentVariables+PresentationProvider.swift in Sources */,
 			);
