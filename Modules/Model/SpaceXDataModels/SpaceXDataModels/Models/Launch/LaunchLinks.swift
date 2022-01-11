@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: -
-public struct LaunchLinks {
+public struct LaunchLinks: Equatable {
     public let patch: LaunchPatch
     public let redditCampaignURL: URL?
     public let pressKitURL: URL?

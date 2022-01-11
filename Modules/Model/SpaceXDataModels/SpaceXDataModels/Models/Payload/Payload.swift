@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Payload: Codable, Identifiable, Hashable {
+public struct Payload: Codable, Identifiable, Hashable, Equatable {
     public let id: String
     public let name: String
     public let orbit: String

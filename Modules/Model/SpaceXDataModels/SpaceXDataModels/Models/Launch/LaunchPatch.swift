@@ -9,7 +9,7 @@ import Foundation
 import Utils
 
 // MARK: -
-public struct LaunchPatch {
+public struct LaunchPatch: Equatable {
     public let small: URL?
     public let large: URL?
 }

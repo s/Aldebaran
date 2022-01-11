@@ -28,6 +28,7 @@
 		B340518A278A3A7000DE53E2 /* launches.json in Resources */ = {isa = PBXBuildFile; fileRef = B3405178278A2B5000DE53E2 /* launches.json */; };
 		B3C2D526278B0A7700652A40 /* MockDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2D525278B0A7700652A40 /* MockDataLoader.swift */; };
 		B3C2D6D2278CEBA800652A40 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2D6D1278CEBA800652A40 /* Payload.swift */; };
+		B3EF6350278D99A1001C4B6C /* Crew.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF634F278D99A1001C4B6C /* Crew.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		B3405186278A329300DE53E2 /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
 		B3C2D525278B0A7700652A40 /* MockDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataLoader.swift; sourceTree = "<group>"; };
 		B3C2D6D1278CEBA800652A40 /* Payload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payload.swift; sourceTree = "<group>"; };
+		B3EF634F278D99A1001C4B6C /* Crew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crew.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 		B34051102789D69800DE53E2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B3EF634E278D999C001C4B6C /* Crew */,
 				B3C2D6D0278CEBA100652A40 /* Payload */,
 				B3405175278A287300DE53E2 /* Launch */,
 				B340517B278A2D7B00DE53E2 /* Launchpad */,
@@ -205,6 +208,14 @@
 				B3C2D6D1278CEBA800652A40 /* Payload.swift */,
 			);
 			path = Payload;
+			sourceTree = "<group>";
+		};
+		B3EF634E278D999C001C4B6C /* Crew */ = {
+			isa = PBXGroup;
+			children = (
+				B3EF634F278D99A1001C4B6C /* Crew.swift */,
+			);
+			path = Crew;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +337,7 @@
 				B3405172278A26DA00DE53E2 /* LaunchQueryResponse.swift in Sources */,
 				B3405181278A2EB400DE53E2 /* Launchpad.swift in Sources */,
 				B34050E52789D65900DE53E2 /* SpaceXDataModels.docc in Sources */,
+				B3EF6350278D99A1001C4B6C /* Crew.swift in Sources */,
 				B34051182789D6F500DE53E2 /* Launch.swift in Sources */,
 				B340511A2789D6F500DE53E2 /* LaunchLinks.swift in Sources */,
 				B3C2D526278B0A7700652A40 /* MockDataLoader.swift in Sources */,

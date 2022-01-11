@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct LaunchCore: Codable {
+public struct LaunchCore: Codable, Equatable {
     // MARK: -
     public let coreID: String?
     public let flight: Int?

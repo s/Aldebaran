@@ -9,7 +9,7 @@ import Foundation
 import Utils
 
 // MARK: -
-public struct Launch: Identifiable {
+public struct Launch: Identifiable, Equatable {
     public let id: String
     public let isUpcoming: Bool
     public let name: String
@@ -19,7 +19,7 @@ public struct Launch: Identifiable {
     public let launchpad: Launchpad
     public let rocket: Rocket
     public let payloads: [Payload]?
-    public let crewIDs: [String]
+    public let crew: [Crew]
     public let cores: [LaunchCore]?
 
     public let dateUtc: Date?
@@ -37,7 +37,7 @@ private extension Launch {
         case launchpad
         case rocket
         case payloads
-        case crewIDs = "crew"
+        case crew
         case cores
         case dateUtc
         case links
@@ -56,7 +56,7 @@ extension Launch: Decodable {
         launchpad = try container.decode(Launchpad.self, forKey: .launchpad)
         rocket = try container.decode(Rocket.self, forKey: .rocket)
         payloads = try container.decodeIfPresent([Payload].self, forKey: .payloads)
-        crewIDs = try container.decode([String].self, forKey: .crewIDs)
+        crew = try container.decode([Crew].self, forKey: .crew)
         cores = try container.decodeIfPresent([LaunchCore].self, forKey: .cores)
         dateUtc = try container.decodeUTCDate(keyedBy: .dateUtc)
         links = try container.decodeIfPresent(LaunchLinks.self, forKey: .links)

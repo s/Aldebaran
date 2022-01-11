@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: -
-public struct Launchpad: Codable {
+public struct Launchpad: Codable, Equatable {
     public let name: String
     public let fullName: String
     public let locality: String

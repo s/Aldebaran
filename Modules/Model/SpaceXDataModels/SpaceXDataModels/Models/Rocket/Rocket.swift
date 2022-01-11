@@ -9,7 +9,7 @@ import Foundation
 import Utils
 
 // MARK: -
-public struct Rocket {
+public struct Rocket: Equatable {
     public let id: String
     public let name: String
     public let description: String?

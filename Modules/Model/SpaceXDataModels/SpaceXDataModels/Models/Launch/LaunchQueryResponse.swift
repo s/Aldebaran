@@ -11,7 +11,7 @@ import Foundation
 public struct LaunchQueryResponse {
     public let launches: [Launch]
     public let totalNumberOfLaunches: Int
-    public let offset: Int
+    public let offset: Int?
     public let limit: Int
     public let totalNumberOfPages: Int
     public let currentPageNumber: Int
@@ -46,7 +46,7 @@ extension LaunchQueryResponse: Decodable {
         
         launches = try container.decode([Launch].self, forKey: .launches)
         totalNumberOfLaunches = try container.decode(Int.self, forKey: .totalNumberOfLaunches)
-        offset = try container.decode(Int.self, forKey: .offset)
+        offset = try container.decodeIfPresent(Int.self, forKey: .offset)
         limit = try container.decode(Int.self, forKey: .limit)
         totalNumberOfPages = try container.decode(Int.self, forKey: .totalNumberOfPages)
         currentPageNumber = try container.decode(Int.self, forKey: .currentPageNumber)
