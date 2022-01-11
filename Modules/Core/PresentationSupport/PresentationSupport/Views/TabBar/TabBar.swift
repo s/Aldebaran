@@ -27,11 +27,8 @@ public struct TabBar: View {
         GeometryReader { geometry in
             ZStack {
                 VStack(spacing: .zero) {
-                    ScrollView {
-                        Color.clear.padding(.bottom, 44)
-                        self.items[self.selectedIndex].content
-                            .frame(width: geometry.size.width, height: geometry.size.height - Self.tabBarHeight)
-                    }
+                    self.items[self.selectedIndex].content
+                        .frame(width: geometry.size.width, height: geometry.size.height - Self.tabBarHeight)
                     Spacer()
                     ZStack {
                         VStack(spacing: .zero) {
