@@ -19,6 +19,8 @@
 		B3C2D6C6278C94DB00652A40 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2D6C5278C94DB00652A40 /* TabBarItem.swift */; };
 		B3C2D6C8278C951B00652A40 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2D6C7278C951B00652A40 /* TabBar.swift */; };
 		B3C2D6CB278C9E4000652A40 /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2D6CA278C9E4000652A40 /* RoundedCorners.swift */; };
+		B3EF62AD278D0317001C4B6C /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = B3EF62AC278D0317001C4B6C /* YouTubeiOSPlayerHelper */; };
+		B3EF62B0278D0337001C4B6C /* YoutubeEmbedPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF62AF278D0337001C4B6C /* YoutubeEmbedPlayerController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,7 @@
 		B3C2D6C5278C94DB00652A40 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 		B3C2D6C7278C951B00652A40 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		B3C2D6CA278C9E4000652A40 /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
+		B3EF62AF278D0337001C4B6C /* YoutubeEmbedPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeEmbedPlayerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3EF62AD278D0317001C4B6C /* YouTubeiOSPlayerHelper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +75,7 @@
 				B3C2D6A9278B8CDB00652A40 /* Protocols */,
 				B3C2D6A8278B8CD000652A40 /* States */,
 				B3C2D6BB278C50D000652A40 /* SupportingFiles */,
+				B3EF62AE278D0320001C4B6C /* ViewControllers */,
 				B3C2D6C9278C9E3100652A40 /* ViewModifiers */,
 				B3C2D6A7278B8CC500652A40 /* Views */,
 			);
@@ -139,6 +144,14 @@
 			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
+		B3EF62AE278D0320001C4B6C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B3EF62AF278D0337001C4B6C /* YoutubeEmbedPlayerController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -167,6 +180,9 @@
 			dependencies = (
 			);
 			name = PresentationSupport;
+			packageProductDependencies = (
+				B3EF62AC278D0317001C4B6C /* YouTubeiOSPlayerHelper */,
+			);
 			productName = PresentationSupport;
 			productReference = B3C2D640278B607500652A40 /* PresentationSupport.framework */;
 			productType = "com.apple.product-type.framework";
@@ -195,6 +211,9 @@
 				Base,
 			);
 			mainGroup = B3C2D636278B607500652A40;
+			packageReferences = (
+				B3EF62AB278D0317001C4B6C /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */,
+			);
 			productRefGroup = B3C2D641278B607500652A40 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -226,6 +245,7 @@
 				B3C2D6CB278C9E4000652A40 /* RoundedCorners.swift in Sources */,
 				B3C2D65D278B674700652A40 /* EmptyContentView.swift in Sources */,
 				B3C2D6B2278B902500652A40 /* Color.swift in Sources */,
+				B3EF62B0278D0337001C4B6C /* YoutubeEmbedPlayerController.swift in Sources */,
 				B3C2D6C1278C8A4400652A40 /* StyledProgressView.swift in Sources */,
 				B3C2D6C8278C951B00652A40 /* TabBar.swift in Sources */,
 				B3C2D654278B60A600652A40 /* LoadableObject.swift in Sources */,
@@ -437,6 +457,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B3EF62AB278D0317001C4B6C /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/youtube/youtube-ios-player-helper.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B3EF62AC278D0317001C4B6C /* YouTubeiOSPlayerHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3EF62AB278D0317001C4B6C /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
+			productName = YouTubeiOSPlayerHelper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B3C2D637278B607500652A40 /* Project object */;
 }
