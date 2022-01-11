@@ -8,7 +8,7 @@
 import SwiftUI
 import PresentationSupport
 import SpaceXDataModels
-import LaunchesUI
+import LaunchesUIComponents
 
 public struct DashboardUIView: View {
     // MARK: -

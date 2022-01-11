@@ -19,6 +19,7 @@
 		B3C2D65B278B64AC00652A40 /* PresentationSupport.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3C2D659278B64AC00652A40 /* PresentationSupport.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B3C2D684278B840400652A40 /* LaunchViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2D683278B840400652A40 /* LaunchViewTests.swift */; };
 		B3C2D6A0278B886F00652A40 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = B3C2D69F278B886F00652A40 /* SnapshotTesting */; };
+		B3EF6323278D918C001C4B6C /* LaunchesUIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EF6322278D918C001C4B6C /* LaunchesUIComponents.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		B3C2D659278B64AC00652A40 /* PresentationSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PresentationSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C2D683278B840400652A40 /* LaunchViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewTests.swift; sourceTree = "<group>"; };
 		B3C2D685278B86B500652A40 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B3EF6322278D918C001C4B6C /* LaunchesUIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LaunchesUIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3EF6323278D918C001C4B6C /* LaunchesUIComponents.framework in Frameworks */,
 				B3C2D65A278B64AC00652A40 /* PresentationSupport.framework in Frameworks */,
 				B3C2D611278B4E9400652A40 /* SpaceXService.framework in Frameworks */,
 			);
@@ -114,6 +117,7 @@
 		B3C2D60F278B4E9400652A40 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B3EF6322278D918C001C4B6C /* LaunchesUIComponents.framework */,
 				B3C2D685278B86B500652A40 /* XCTest.framework */,
 				B3C2D659278B64AC00652A40 /* PresentationSupport.framework */,
 				B3C2D610278B4E9400652A40 /* SpaceXService.framework */,

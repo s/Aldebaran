@@ -7,135 +7,135 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B3EF62CC278D8F2A001C4B6C /* LaunchesUI.h in Headers */ = {isa = PBXBuildFile; fileRef = B3EF62CB278D8F2A001C4B6C /* LaunchesUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B3EF62DD278D8F82001C4B6C /* LaunchpadMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF62DB278D8F82001C4B6C /* LaunchpadMarker.swift */; };
-		B3EF62DE278D8F82001C4B6C /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF62DC278D8F82001C4B6C /* LaunchViewModel.swift */; };
-		B3EF62E2278D8F99001C4B6C /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF62DF278D8F99001C4B6C /* LaunchView.swift */; };
-		B3EF62E7278D8FE2001C4B6C /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = B3EF62E6278D8FE2001C4B6C /* YouTubeiOSPlayerHelper */; };
+		B3EF630A278D9101001C4B6C /* LaunchesUIComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = B3EF6309278D9101001C4B6C /* LaunchesUIComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3EF631B278D9139001C4B6C /* LaunchpadMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF6319278D9138001C4B6C /* LaunchpadMarker.swift */; };
+		B3EF631C278D9139001C4B6C /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF631A278D9139001C4B6C /* LaunchViewModel.swift */; };
+		B3EF631E278D9144001C4B6C /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF631D278D9144001C4B6C /* LaunchView.swift */; };
+		B3EF6321278D916A001C4B6C /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = B3EF6320278D916A001C4B6C /* YouTubeiOSPlayerHelper */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B3EF62C8278D8F2A001C4B6C /* LaunchesUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LaunchesUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3EF62CB278D8F2A001C4B6C /* LaunchesUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchesUI.h; sourceTree = "<group>"; };
-		B3EF62DB278D8F82001C4B6C /* LaunchpadMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchpadMarker.swift; sourceTree = "<group>"; };
-		B3EF62DC278D8F82001C4B6C /* LaunchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
-		B3EF62DF278D8F99001C4B6C /* LaunchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		B3EF6306278D9101001C4B6C /* LaunchesUIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LaunchesUIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3EF6309278D9101001C4B6C /* LaunchesUIComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchesUIComponents.h; sourceTree = "<group>"; };
+		B3EF6319278D9138001C4B6C /* LaunchpadMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchpadMarker.swift; sourceTree = "<group>"; };
+		B3EF631A278D9139001C4B6C /* LaunchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
+		B3EF631D278D9144001C4B6C /* LaunchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B3EF62C5278D8F2A001C4B6C /* Frameworks */ = {
+		B3EF6303278D9101001C4B6C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3EF62E7278D8FE2001C4B6C /* YouTubeiOSPlayerHelper in Frameworks */,
+				B3EF6321278D916A001C4B6C /* YouTubeiOSPlayerHelper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B3EF62BE278D8F2A001C4B6C = {
+		B3EF62FC278D9101001C4B6C = {
 			isa = PBXGroup;
 			children = (
-				B3EF62CA278D8F2A001C4B6C /* LaunchesUI */,
-				B3EF62C9278D8F2A001C4B6C /* Products */,
+				B3EF6308278D9101001C4B6C /* LaunchesUIComponents */,
+				B3EF6307278D9101001C4B6C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B3EF62C9278D8F2A001C4B6C /* Products */ = {
+		B3EF6307278D9101001C4B6C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B3EF62C8278D8F2A001C4B6C /* LaunchesUI.framework */,
+				B3EF6306278D9101001C4B6C /* LaunchesUIComponents.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B3EF62CA278D8F2A001C4B6C /* LaunchesUI */ = {
+		B3EF6308278D9101001C4B6C /* LaunchesUIComponents */ = {
 			isa = PBXGroup;
 			children = (
-				B3EF62D8278D8F5D001C4B6C /* SupportingFiles */,
-				B3EF62DA278D8F68001C4B6C /* ViewModels */,
-				B3EF62D9278D8F63001C4B6C /* Views */,
+				B3EF6318278D9110001C4B6C /* SupportingFiles */,
+				B3EF6317278D910B001C4B6C /* ViewModels */,
+				B3EF6316278D9107001C4B6C /* Views */,
 			);
-			path = LaunchesUI;
+			path = LaunchesUIComponents;
 			sourceTree = "<group>";
 		};
-		B3EF62D8278D8F5D001C4B6C /* SupportingFiles */ = {
+		B3EF6316278D9107001C4B6C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B3EF62CB278D8F2A001C4B6C /* LaunchesUI.h */,
-			);
-			path = SupportingFiles;
-			sourceTree = "<group>";
-		};
-		B3EF62D9278D8F63001C4B6C /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				B3EF62DF278D8F99001C4B6C /* LaunchView.swift */,
+				B3EF631D278D9144001C4B6C /* LaunchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		B3EF62DA278D8F68001C4B6C /* ViewModels */ = {
+		B3EF6317278D910B001C4B6C /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				B3EF62DB278D8F82001C4B6C /* LaunchpadMarker.swift */,
-				B3EF62DC278D8F82001C4B6C /* LaunchViewModel.swift */,
+				B3EF6319278D9138001C4B6C /* LaunchpadMarker.swift */,
+				B3EF631A278D9139001C4B6C /* LaunchViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B3EF6318278D9110001C4B6C /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B3EF6309278D9101001C4B6C /* LaunchesUIComponents.h */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		B3EF62C3278D8F2A001C4B6C /* Headers */ = {
+		B3EF6301278D9101001C4B6C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3EF62CC278D8F2A001C4B6C /* LaunchesUI.h in Headers */,
+				B3EF630A278D9101001C4B6C /* LaunchesUIComponents.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B3EF62C7278D8F2A001C4B6C /* LaunchesUI */ = {
+		B3EF6305278D9101001C4B6C /* LaunchesUIComponents */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B3EF62CF278D8F2A001C4B6C /* Build configuration list for PBXNativeTarget "LaunchesUI" */;
+			buildConfigurationList = B3EF630D278D9101001C4B6C /* Build configuration list for PBXNativeTarget "LaunchesUIComponents" */;
 			buildPhases = (
-				B3EF62C3278D8F2A001C4B6C /* Headers */,
-				B3EF62C4278D8F2A001C4B6C /* Sources */,
-				B3EF62C5278D8F2A001C4B6C /* Frameworks */,
-				B3EF62C6278D8F2A001C4B6C /* Resources */,
+				B3EF6301278D9101001C4B6C /* Headers */,
+				B3EF6302278D9101001C4B6C /* Sources */,
+				B3EF6303278D9101001C4B6C /* Frameworks */,
+				B3EF6304278D9101001C4B6C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = LaunchesUI;
+			name = LaunchesUIComponents;
 			packageProductDependencies = (
-				B3EF62E6278D8FE2001C4B6C /* YouTubeiOSPlayerHelper */,
+				B3EF6320278D916A001C4B6C /* YouTubeiOSPlayerHelper */,
 			);
-			productName = LaunchesUI;
-			productReference = B3EF62C8278D8F2A001C4B6C /* LaunchesUI.framework */;
+			productName = LaunchesUIComponents;
+			productReference = B3EF6306278D9101001C4B6C /* LaunchesUIComponents.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B3EF62BF278D8F2A001C4B6C /* Project object */ = {
+		B3EF62FD278D9101001C4B6C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					B3EF62C7278D8F2A001C4B6C = {
+					B3EF6305278D9101001C4B6C = {
 						CreatedOnToolsVersion = 13.2.1;
 						LastSwiftMigration = 1320;
 					};
 				};
 			};
-			buildConfigurationList = B3EF62C2278D8F2A001C4B6C /* Build configuration list for PBXProject "LaunchesUI" */;
+			buildConfigurationList = B3EF6300278D9101001C4B6C /* Build configuration list for PBXProject "LaunchesUIComponents" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -143,21 +143,21 @@
 				en,
 				Base,
 			);
-			mainGroup = B3EF62BE278D8F2A001C4B6C;
+			mainGroup = B3EF62FC278D9101001C4B6C;
 			packageReferences = (
-				B3EF62E5278D8FE2001C4B6C /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */,
+				B3EF631F278D916A001C4B6C /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */,
 			);
-			productRefGroup = B3EF62C9278D8F2A001C4B6C /* Products */;
+			productRefGroup = B3EF6307278D9101001C4B6C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B3EF62C7278D8F2A001C4B6C /* LaunchesUI */,
+				B3EF6305278D9101001C4B6C /* LaunchesUIComponents */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B3EF62C6278D8F2A001C4B6C /* Resources */ = {
+		B3EF6304278D9101001C4B6C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -167,20 +167,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B3EF62C4278D8F2A001C4B6C /* Sources */ = {
+		B3EF6302278D9101001C4B6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3EF62DD278D8F82001C4B6C /* LaunchpadMarker.swift in Sources */,
-				B3EF62E2278D8F99001C4B6C /* LaunchView.swift in Sources */,
-				B3EF62DE278D8F82001C4B6C /* LaunchViewModel.swift in Sources */,
+				B3EF631B278D9139001C4B6C /* LaunchpadMarker.swift in Sources */,
+				B3EF631E278D9144001C4B6C /* LaunchView.swift in Sources */,
+				B3EF631C278D9139001C4B6C /* LaunchViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		B3EF62CD278D8F2A001C4B6C /* Debug */ = {
+		B3EF630B278D9101001C4B6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -244,7 +244,7 @@
 			};
 			name = Debug;
 		};
-		B3EF62CE278D8F2A001C4B6C /* Release */ = {
+		B3EF630C278D9101001C4B6C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -302,7 +302,7 @@
 			};
 			name = Release;
 		};
-		B3EF62D0278D8F2A001C4B6C /* Debug */ = {
+		B3EF630E278D9101001C4B6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -321,7 +321,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nl.saidozcan.LaunchesUI;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.saidozcan.LaunchesUIComponents;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -331,7 +331,7 @@
 			};
 			name = Debug;
 		};
-		B3EF62D1278D8F2A001C4B6C /* Release */ = {
+		B3EF630F278D9101001C4B6C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -350,7 +350,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nl.saidozcan.LaunchesUI;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.saidozcan.LaunchesUIComponents;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -362,20 +362,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B3EF62C2278D8F2A001C4B6C /* Build configuration list for PBXProject "LaunchesUI" */ = {
+		B3EF6300278D9101001C4B6C /* Build configuration list for PBXProject "LaunchesUIComponents" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B3EF62CD278D8F2A001C4B6C /* Debug */,
-				B3EF62CE278D8F2A001C4B6C /* Release */,
+				B3EF630B278D9101001C4B6C /* Debug */,
+				B3EF630C278D9101001C4B6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B3EF62CF278D8F2A001C4B6C /* Build configuration list for PBXNativeTarget "LaunchesUI" */ = {
+		B3EF630D278D9101001C4B6C /* Build configuration list for PBXNativeTarget "LaunchesUIComponents" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B3EF62D0278D8F2A001C4B6C /* Debug */,
-				B3EF62D1278D8F2A001C4B6C /* Release */,
+				B3EF630E278D9101001C4B6C /* Debug */,
+				B3EF630F278D9101001C4B6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -383,7 +383,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B3EF62E5278D8FE2001C4B6C /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */ = {
+		B3EF631F278D916A001C4B6C /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/youtube/youtube-ios-player-helper.git";
 			requirement = {
@@ -394,12 +394,12 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B3EF62E6278D8FE2001C4B6C /* YouTubeiOSPlayerHelper */ = {
+		B3EF6320278D916A001C4B6C /* YouTubeiOSPlayerHelper */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B3EF62E5278D8FE2001C4B6C /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
+			package = B3EF631F278D916A001C4B6C /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
 			productName = YouTubeiOSPlayerHelper;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = B3EF62BF278D8F2A001C4B6C /* Project object */;
+	rootObject = B3EF62FD278D9101001C4B6C /* Project object */;
 }
