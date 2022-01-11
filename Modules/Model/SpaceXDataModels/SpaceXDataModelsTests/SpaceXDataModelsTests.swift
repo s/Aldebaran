@@ -52,11 +52,11 @@ class SpaceXDataModelsTests: XCTestCase {
 
         let oneLaunch = launches.launches[7]
         XCTAssertNotNil(oneLaunch)
-        XCTAssertEqual(oneLaunch.name, "Starlink 4-4 (v1.5)")
+        XCTAssertEqual(oneLaunch.name, "Starlink 4-1 (v1.5)")
         XCTAssertEqual(oneLaunch.rocket.id, "5e9d0d95eda69973a809d1ec")
         XCTAssertEqual(oneLaunch.rocket.name, "Falcon 9")
-        XCTAssertEqual(oneLaunch.flightNumber, 141)
-        XCTAssertEqual(oneLaunch.dateUtc, Date(timeIntervalSince1970: 1639831300))
-        XCTAssertEqual(oneLaunch.id, "61bba806437241381bf7061e")
+        XCTAssertEqual(oneLaunch.flightNumber, 137)
+        XCTAssertEqual(oneLaunch.dateUtc, Date(timeIntervalSince1970: 1636807200))
+        XCTAssertEqual(oneLaunch.id, "618faad2563d69573ed8ca9d")
     }
 }
