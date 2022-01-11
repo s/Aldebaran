@@ -11,7 +11,7 @@ import PresentationSupport
 import MapKit
 import AVKit
 
-struct LaunchView: View {
+public struct LaunchView: View {
     // MARK: -
     private let viewModel: LaunchViewModel
     
@@ -22,14 +22,14 @@ struct LaunchView: View {
     private var isShowingYoutubePlayer: Bool = false
     
     // MARK: -
-    init(viewModel: LaunchViewModel) {
+    public init(viewModel: LaunchViewModel) {
         self.viewModel = viewModel
         self.region = MKCoordinateRegion(center: viewModel.launchpadRegionCenter,
                                          span: viewModel.launchpadRegionSpan)
     }
     
     // MARK: -
-    var body: some View {
+    public var body: some View {
         VStack(alignment: .leading, spacing: Spacing.small.rawValue) {
             Text(viewModel.title)
                 .applyTypography(.h3)

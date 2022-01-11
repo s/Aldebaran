@@ -15,15 +15,10 @@
 		B3C2D612278B4E9400652A40 /* SpaceXService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3C2D610278B4E9400652A40 /* SpaceXService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B3C2D62A278B56EB00652A40 /* DashboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2D629278B56EB00652A40 /* DashboardUITests.swift */; };
 		B3C2D62B278B56EB00652A40 /* DashboardUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C2D5F7278B4E3D00652A40 /* DashboardUI.framework */; };
-		B3C2D633278B5B6C00652A40 /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2D632278B5B6C00652A40 /* LaunchViewModel.swift */; };
-		B3C2D635278B5B7600652A40 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2D634278B5B7600652A40 /* LaunchView.swift */; };
 		B3C2D65A278B64AC00652A40 /* PresentationSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C2D659278B64AC00652A40 /* PresentationSupport.framework */; };
 		B3C2D65B278B64AC00652A40 /* PresentationSupport.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3C2D659278B64AC00652A40 /* PresentationSupport.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B3C2D684278B840400652A40 /* LaunchViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2D683278B840400652A40 /* LaunchViewTests.swift */; };
 		B3C2D6A0278B886F00652A40 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = B3C2D69F278B886F00652A40 /* SnapshotTesting */; };
-		B3C2D6B5278B91F500652A40 /* LaunchContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2D6B4278B91F500652A40 /* LaunchContentView.swift */; };
-		B3C2D6B7278B928E00652A40 /* LaunchFootlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2D6B6278B928E00652A40 /* LaunchFootlineView.swift */; };
-		B3C2D6CF278CD47300652A40 /* LaunchpadMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2D6CE278CD47300652A40 /* LaunchpadMarker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,14 +55,9 @@
 		B3C2D610278B4E9400652A40 /* SpaceXService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SpaceXService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C2D627278B56EB00652A40 /* DashboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DashboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C2D629278B56EB00652A40 /* DashboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardUITests.swift; sourceTree = "<group>"; };
-		B3C2D632278B5B6C00652A40 /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
-		B3C2D634278B5B7600652A40 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		B3C2D659278B64AC00652A40 /* PresentationSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PresentationSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C2D683278B840400652A40 /* LaunchViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewTests.swift; sourceTree = "<group>"; };
 		B3C2D685278B86B500652A40 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		B3C2D6B4278B91F500652A40 /* LaunchContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchContentView.swift; sourceTree = "<group>"; };
-		B3C2D6B6278B928E00652A40 /* LaunchFootlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchFootlineView.swift; sourceTree = "<group>"; };
-		B3C2D6CE278CD47300652A40 /* LaunchpadMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchpadMarker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +124,6 @@
 		B3C2D616278B508B00652A40 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B3C2D6B3278B91DF00652A40 /* Launch */,
 				B3C2D609278B4E5C00652A40 /* DashboardUIView.swift */,
 			);
 			path = Views;
@@ -144,8 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				B3C2D60B278B4E6B00652A40 /* DashboardUIViewModel.swift */,
-				B3C2D632278B5B6C00652A40 /* LaunchViewModel.swift */,
-				B3C2D6CE278CD47300652A40 /* LaunchpadMarker.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -174,16 +161,6 @@
 			children = (
 			);
 			path = Mocks;
-			sourceTree = "<group>";
-		};
-		B3C2D6B3278B91DF00652A40 /* Launch */ = {
-			isa = PBXGroup;
-			children = (
-				B3C2D6B4278B91F500652A40 /* LaunchContentView.swift */,
-				B3C2D6B6278B928E00652A40 /* LaunchFootlineView.swift */,
-				B3C2D634278B5B7600652A40 /* LaunchView.swift */,
-			);
-			path = Launch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,13 +283,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3C2D60A278B4E5C00652A40 /* DashboardUIView.swift in Sources */,
-				B3C2D6B5278B91F500652A40 /* LaunchContentView.swift in Sources */,
-				B3C2D6CF278CD47300652A40 /* LaunchpadMarker.swift in Sources */,
-				B3C2D635278B5B7600652A40 /* LaunchView.swift in Sources */,
 				B3C2D60C278B4E6B00652A40 /* DashboardUIViewModel.swift in Sources */,
 				B3C2D60E278B4E7600652A40 /* DashboardUIProviding.swift in Sources */,
-				B3C2D6B7278B928E00652A40 /* LaunchFootlineView.swift in Sources */,
-				B3C2D633278B5B6C00652A40 /* LaunchViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,7 @@ import SwiftUI
 import SpaceXDataModels
 import MapKit
 
-final class LaunchViewModel: ObservableObject {
+public final class LaunchViewModel: ObservableObject {
     // MARK: -
     let title: String
     let launch: Launch
@@ -39,7 +39,7 @@ final class LaunchViewModel: ObservableObject {
     }
 
     // MARK: -
-    init(title: String, launch: Launch) {
+    public init(title: String, launch: Launch) {
         self.title = title
         self.launch = launch
         self.launchpadRegionCenter = CLLocationCoordinate2D(latitude: launch.launchpad.latitude,
